@@ -1,22 +1,24 @@
 class Solution {
 public:
     int sumFourDivisors(vector<int>& nums) {
-        int totalsum=0;
-        for(int i=0;i<nums.size();i++){
-        int count=0;
-        int sum=0;
-        int n=nums[i];
-        for(int i=1;i<=n;i++){
-            if(n%i==0){
-                count++;
-                sum+=i;
+        int ans = 0;
+
+        for (int n : nums) {
+            vector<int> divisors;
+
+            for (int i = 1; i * i <= n; i++) {
+                if (n % i == 0) {
+                    divisors.push_back(i);
+                    if (i != n / i)
+                        divisors.push_back(n / i);
+                }
             }
-            if(count>4)break;
-        }
-            if(count==4){
-                totalsum += sum;
+
+            if (divisors.size() == 4) {
+                for (int d : divisors)
+                    ans += d;
             }
         }
-        return totalsum;
+        return ans;
     }
 };
