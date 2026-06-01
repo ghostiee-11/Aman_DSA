@@ -76,12 +76,13 @@ Hence, the minimum cost to buy all candies is 5 + 5 = 10.
  - `1 <= cost.length <= 100`
  - `1 <= cost[i] <= 100`
 
-## Solution
+## Solutions
 
-- **Language:** Python3
+### Python3
+
 - **Runtime:** 0 ms (beats 100.00%)
-- **Memory:** 19.2 MB (beats 84.98%)
-- **Submitted:** 2026-06-01 17:44 UTC
+- **Memory:** 19.2 MB (beats 48.06%)
+- **Submitted:** 2026-06-01 17:49 UTC
 
 See [solution.py](solution.py).
 
