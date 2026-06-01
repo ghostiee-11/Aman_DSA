@@ -1,0 +1,11 @@
+{
+  "2144-minimum-cost-of-buying-candies-with-discount": {
+    "frontend_id": "2144",
+    "title": "Minimum Cost of Buying Candies With Discount",
+    "slug": "minimum-cost-of-buying-candies-with-discount",
+    "difficulty": "Easy",
+    "folder": "2144-minimum-cost-of-buying-candies-with-discount",
+    "lang_display": "C++",
+    "solved_at": "2026-06-01"
+  }
+}
