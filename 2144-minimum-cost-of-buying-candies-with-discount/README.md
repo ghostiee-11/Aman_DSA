@@ -78,12 +78,12 @@ Hence, the minimum cost to buy all candies is 5 + 5 = 10.
 
 ## Solution
 
-- **Language:** C++
-- **Runtime:** 2 ms (beats 14.42%)
-- **Memory:** 14.2 MB (beats 49.81%)
-- **Submitted:** 2026-06-01 17:38 UTC
+- **Language:** Python3
+- **Runtime:** 0 ms (beats 100.00%)
+- **Memory:** 19.2 MB (beats 84.98%)
+- **Submitted:** 2026-06-01 17:44 UTC
 
-See [solution.cpp](solution.cpp).
+See [solution.py](solution.py).
 
 ## Notes
 
