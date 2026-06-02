@@ -1,36 +1,72 @@
 {
   "2144-minimum-cost-of-buying-candies-with-discount": {
+    "difficulty": "Easy",
     "folder": "2144-minimum-cost-of-buying-candies-with-discount",
-    "solutions": {
-      "py": {
-        "lang_display": "Python3",
-        "file": "solution.py",
-        "runtime": "0 ms",
-        "runtime_pct": 100,
-        "memory": "19.2 MB",
-        "memory_pct": 48.056599999999996,
-        "solved_at": "2026-06-01",
-        "submitted": "2026-06-01 17:49 UTC"
-      }
-    },
+    "frontend_id": "2144",
+    "lang_display": "Python3",
     "meta": {
-      "frontend_id": "2144",
-      "title": "Minimum Cost of Buying Candies With Discount",
-      "slug": "minimum-cost-of-buying-candies-with-discount",
       "difficulty": "Easy",
+      "frontend_id": "2144",
+      "slug": "minimum-cost-of-buying-candies-with-discount",
       "tags": [
         "Array",
         "Greedy",
         "Sorting"
       ],
+      "title": "Minimum Cost of Buying Candies With Discount",
       "url": "https://leetcode.com/problems/minimum-cost-of-buying-candies-with-discount/"
     },
-    "statement_md": "A shop is selling candies at a discount. For **every two** candies sold, the shop gives a **third** candy for **free**.\n\n\n\nThe customer can choose **any** candy to take away for free as long as the cost of the chosen candy is less than or equal to the **minimum** cost of the two candies bought.\n\n\n - For example, if there are `4` candies with costs `1`, `2`, `3`, and `4`, and the customer buys candies with costs `2` and `3`, they can take the candy with cost `1` for free, but not the candy with cost `4`.\n\n\n\nGiven a **0-indexed** integer array `cost`, where `cost[i]` denotes the cost of the `ith` candy, return *the **minimum cost** of buying **all** the candies*.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: cost = [1,2,3]\nOutput: 5\nExplanation: We buy the candies with costs 2 and 3, and take the candy with cost 1 for free.\nThe total cost of buying all candies is 2 + 3 = 5. This is the only way we can buy the candies.\nNote that we cannot buy candies with costs 1 and 3, and then take the candy with cost 2 for free.\nThe cost of the free candy has to be less than or equal to the minimum cost of the purchased candies.\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: cost = [6,5,7,9,2,2]\nOutput: 23\nExplanation: The way in which we can get the minimum cost is described below:\n- Buy candies with costs 9 and 7\n- Take the candy with cost 6 for free\n- We buy candies with costs 5 and 2\n- Take the last remaining candy with cost 2 for free\nHence, the minimum cost to buy all candies is 9 + 7 + 5 + 2 = 23.\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: cost = [5,5]\nOutput: 10\nExplanation: Since there are only 2 candies, we buy both of them. There is not a third candy we can take for free.\nHence, the minimum cost to buy all candies is 5 + 5 = 10.\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= cost.length <= 100`\n - `1 <= cost[i] <= 100`",
-    "frontend_id": "2144",
-    "title": "Minimum Cost of Buying Candies With Discount",
     "slug": "minimum-cost-of-buying-candies-with-discount",
+    "solutions": {
+      "py": {
+        "file": "solution.py",
+        "lang_display": "Python3",
+        "memory": "19.2 MB",
+        "memory_pct": 48.056599999999996,
+        "runtime": "0 ms",
+        "runtime_pct": 100,
+        "solved_at": "2026-06-01",
+        "submitted": "2026-06-01 17:49 UTC"
+      }
+    },
+    "solved_at": "2026-06-01",
+    "statement_md": "A shop is selling candies at a discount. For **every two** candies sold, the shop gives a **third** candy for **free**.\n\n\n\nThe customer can choose **any** candy to take away for free as long as the cost of the chosen candy is less than or equal to the **minimum** cost of the two candies bought.\n\n\n - For example, if there are `4` candies with costs `1`, `2`, `3`, and `4`, and the customer buys candies with costs `2` and `3`, they can take the candy with cost `1` for free, but not the candy with cost `4`.\n\n\n\nGiven a **0-indexed** integer array `cost`, where `cost[i]` denotes the cost of the `ith` candy, return *the **minimum cost** of buying **all** the candies*.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: cost = [1,2,3]\nOutput: 5\nExplanation: We buy the candies with costs 2 and 3, and take the candy with cost 1 for free.\nThe total cost of buying all candies is 2 + 3 = 5. This is the only way we can buy the candies.\nNote that we cannot buy candies with costs 1 and 3, and then take the candy with cost 2 for free.\nThe cost of the free candy has to be less than or equal to the minimum cost of the purchased candies.\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: cost = [6,5,7,9,2,2]\nOutput: 23\nExplanation: The way in which we can get the minimum cost is described below:\n- Buy candies with costs 9 and 7\n- Take the candy with cost 6 for free\n- We buy candies with costs 5 and 2\n- Take the last remaining candy with cost 2 for free\nHence, the minimum cost to buy all candies is 9 + 7 + 5 + 2 = 23.\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: cost = [5,5]\nOutput: 10\nExplanation: Since there are only 2 candies, we buy both of them. There is not a third candy we can take for free.\nHence, the minimum cost to buy all candies is 5 + 5 = 10.\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= cost.length <= 100`\n - `1 <= cost[i] <= 100`",
+    "title": "Minimum Cost of Buying Candies With Discount"
+  },
+  "3633-earliest-finish-time-for-land-and-water-rides-i": {
+    "folder": "3633-earliest-finish-time-for-land-and-water-rides-i",
+    "solutions": {
+      "cpp": {
+        "lang_display": "C++",
+        "file": "solution.cpp",
+        "runtime": "4 ms",
+        "runtime_pct": 63.71320000000001,
+        "memory": "91.8 MB",
+        "memory_pct": 59.9156,
+        "solved_at": "2026-06-02",
+        "submitted": "2026-06-02 11:38 UTC"
+      }
+    },
+    "meta": {
+      "frontend_id": "3633",
+      "title": "Earliest Finish Time for Land and Water Rides I",
+      "slug": "earliest-finish-time-for-land-and-water-rides-i",
+      "difficulty": "Easy",
+      "tags": [
+        "Array",
+        "Two Pointers",
+        "Binary Search",
+        "Greedy",
+        "Sorting"
+      ],
+      "url": "https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/"
+    },
+    "statement_md": "You are given two categories of theme park attractions: **land rides** and **water rides**.\n\n\n - **Land rides**\n - `landStartTime[i]` – the earliest time the `ith` land ride can be boarded.\n - `landDuration[i]` – how long the `ith` land ride lasts.\n - **Water rides**\n - `waterStartTime[j]` – the earliest time the `jth` water ride can be boarded.\n - `waterDuration[j]` – how long the `jth` water ride lasts.\n\n\n\nA tourist must experience **exactly one** ride from **each** category, in **either order**.\n\n\n - A ride may be started at its opening time or **any later moment**.\n - If a ride is started at time `t`, it finishes at time `t + duration`.\n - Immediately after finishing one ride the tourist may board the other (if it is already open) or wait until it opens.\n\n\n\nReturn the **earliest possible time** at which the tourist can finish both rides.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** landStartTime = [2,8], landDuration = [4,1], waterStartTime = [6], waterDuration = [3]\n\n\n\n**Output:** 9\n\n\n\n**Explanation:**​​​​​​​\n\n\n - Plan A (land ride 0 → water ride 0):\n - Start land ride 0 at time `landStartTime[0] = 2`. Finish at `2 + landDuration[0] = 6`.\n - Water ride 0 opens at time `waterStartTime[0] = 6`. Start immediately at `6`, finish at `6 + waterDuration[0] = 9`.\n - Plan B (water ride 0 → land ride 1):\n - Start water ride 0 at time `waterStartTime[0] = 6`. Finish at `6 + waterDuration[0] = 9`.\n - Land ride 1 opens at `landStartTime[1] = 8`. Start at time `9`, finish at `9 + landDuration[1] = 10`.\n - Plan C (land ride 1 → water ride 0):\n - Start land ride 1 at time `landStartTime[1] = 8`. Finish at `8 + landDuration[1] = 9`.\n - Water ride 0 opened at `waterStartTime[0] = 6`. Start at time `9`, finish at `9 + waterDuration[0] = 12`.\n - Plan D (water ride 0 → land ride 0):\n - Start water ride 0 at time `waterStartTime[0] = 6`. Finish at `6 + waterDuration[0] = 9`.\n - Land ride 0 opened at `landStartTime[0] = 2`. Start at time `9`, finish at `9 + landDuration[0] = 13`.\n\n\n\nPlan A gives the earliest finish time of 9.\n\n\n\n**Example 2:**\n\n\n\n**Input:** landStartTime = [5], landDuration = [3], waterStartTime = [1], waterDuration = [10]\n\n\n\n**Output:** 14\n\n\n\n**Explanation:**​​​​​​​\n\n\n - Plan A (water ride 0 → land ride 0):\n - Start water ride 0 at time `waterStartTime[0] = 1`. Finish at `1 + waterDuration[0] = 11`.\n - Land ride 0 opened at `landStartTime[0] = 5`. Start immediately at `11` and finish at `11 + landDuration[0] = 14`.\n - Plan B (land ride 0 → water ride 0):\n - Start land ride 0 at time `landStartTime[0] = 5`. Finish at `5 + landDuration[0] = 8`.\n - Water ride 0 opened at `waterStartTime[0] = 1`. Start immediately at `8` and finish at `8 + waterDuration[0] = 18`.\n\n\n\nPlan A provides the earliest finish time of 14.**​​​​​​​**\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= n, m <= 100`\n - `landStartTime.length == landDuration.length == n`\n - `waterStartTime.length == waterDuration.length == m`\n - `1 <= landStartTime[i], landDuration[i], waterStartTime[j], waterDuration[j] <= 1000`",
+    "frontend_id": "3633",
+    "title": "Earliest Finish Time for Land and Water Rides I",
+    "slug": "earliest-finish-time-for-land-and-water-rides-i",
     "difficulty": "Easy",
-    "lang_display": "Python3",
-    "solved_at": "2026-06-01"
+    "lang_display": "C++",
+    "solved_at": "2026-06-02"
   }
 }
