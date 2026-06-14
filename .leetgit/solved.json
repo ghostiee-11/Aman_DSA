@@ -34,24 +34,14 @@
     "title": "Minimum Cost of Buying Candies With Discount"
   },
   "3633-earliest-finish-time-for-land-and-water-rides-i": {
+    "difficulty": "Easy",
     "folder": "3633-earliest-finish-time-for-land-and-water-rides-i",
-    "solutions": {
-      "cpp": {
-        "lang_display": "C++",
-        "file": "solution.cpp",
-        "runtime": "4 ms",
-        "runtime_pct": 63.71320000000001,
-        "memory": "91.8 MB",
-        "memory_pct": 59.9156,
-        "solved_at": "2026-06-02",
-        "submitted": "2026-06-02 11:38 UTC"
-      }
-    },
+    "frontend_id": "3633",
+    "lang_display": "C++",
     "meta": {
-      "frontend_id": "3633",
-      "title": "Earliest Finish Time for Land and Water Rides I",
-      "slug": "earliest-finish-time-for-land-and-water-rides-i",
       "difficulty": "Easy",
+      "frontend_id": "3633",
+      "slug": "earliest-finish-time-for-land-and-water-rides-i",
       "tags": [
         "Array",
         "Two Pointers",
@@ -59,14 +49,58 @@
         "Greedy",
         "Sorting"
       ],
+      "title": "Earliest Finish Time for Land and Water Rides I",
       "url": "https://leetcode.com/problems/earliest-finish-time-for-land-and-water-rides-i/"
     },
-    "statement_md": "You are given two categories of theme park attractions: **land rides** and **water rides**.\n\n\n - **Land rides**\n - `landStartTime[i]` – the earliest time the `ith` land ride can be boarded.\n - `landDuration[i]` – how long the `ith` land ride lasts.\n - **Water rides**\n - `waterStartTime[j]` – the earliest time the `jth` water ride can be boarded.\n - `waterDuration[j]` – how long the `jth` water ride lasts.\n\n\n\nA tourist must experience **exactly one** ride from **each** category, in **either order**.\n\n\n - A ride may be started at its opening time or **any later moment**.\n - If a ride is started at time `t`, it finishes at time `t + duration`.\n - Immediately after finishing one ride the tourist may board the other (if it is already open) or wait until it opens.\n\n\n\nReturn the **earliest possible time** at which the tourist can finish both rides.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** landStartTime = [2,8], landDuration = [4,1], waterStartTime = [6], waterDuration = [3]\n\n\n\n**Output:** 9\n\n\n\n**Explanation:**​​​​​​​\n\n\n - Plan A (land ride 0 → water ride 0):\n - Start land ride 0 at time `landStartTime[0] = 2`. Finish at `2 + landDuration[0] = 6`.\n - Water ride 0 opens at time `waterStartTime[0] = 6`. Start immediately at `6`, finish at `6 + waterDuration[0] = 9`.\n - Plan B (water ride 0 → land ride 1):\n - Start water ride 0 at time `waterStartTime[0] = 6`. Finish at `6 + waterDuration[0] = 9`.\n - Land ride 1 opens at `landStartTime[1] = 8`. Start at time `9`, finish at `9 + landDuration[1] = 10`.\n - Plan C (land ride 1 → water ride 0):\n - Start land ride 1 at time `landStartTime[1] = 8`. Finish at `8 + landDuration[1] = 9`.\n - Water ride 0 opened at `waterStartTime[0] = 6`. Start at time `9`, finish at `9 + waterDuration[0] = 12`.\n - Plan D (water ride 0 → land ride 0):\n - Start water ride 0 at time `waterStartTime[0] = 6`. Finish at `6 + waterDuration[0] = 9`.\n - Land ride 0 opened at `landStartTime[0] = 2`. Start at time `9`, finish at `9 + landDuration[0] = 13`.\n\n\n\nPlan A gives the earliest finish time of 9.\n\n\n\n**Example 2:**\n\n\n\n**Input:** landStartTime = [5], landDuration = [3], waterStartTime = [1], waterDuration = [10]\n\n\n\n**Output:** 14\n\n\n\n**Explanation:**​​​​​​​\n\n\n - Plan A (water ride 0 → land ride 0):\n - Start water ride 0 at time `waterStartTime[0] = 1`. Finish at `1 + waterDuration[0] = 11`.\n - Land ride 0 opened at `landStartTime[0] = 5`. Start immediately at `11` and finish at `11 + landDuration[0] = 14`.\n - Plan B (land ride 0 → water ride 0):\n - Start land ride 0 at time `landStartTime[0] = 5`. Finish at `5 + landDuration[0] = 8`.\n - Water ride 0 opened at `waterStartTime[0] = 1`. Start immediately at `8` and finish at `8 + waterDuration[0] = 18`.\n\n\n\nPlan A provides the earliest finish time of 14.**​​​​​​​**\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= n, m <= 100`\n - `landStartTime.length == landDuration.length == n`\n - `waterStartTime.length == waterDuration.length == m`\n - `1 <= landStartTime[i], landDuration[i], waterStartTime[j], waterDuration[j] <= 1000`",
-    "frontend_id": "3633",
-    "title": "Earliest Finish Time for Land and Water Rides I",
     "slug": "earliest-finish-time-for-land-and-water-rides-i",
+    "solutions": {
+      "cpp": {
+        "file": "solution.cpp",
+        "lang_display": "C++",
+        "memory": "91.8 MB",
+        "memory_pct": 59.9156,
+        "runtime": "4 ms",
+        "runtime_pct": 63.71320000000001,
+        "solved_at": "2026-06-02",
+        "submitted": "2026-06-02 11:38 UTC"
+      }
+    },
+    "solved_at": "2026-06-02",
+    "statement_md": "You are given two categories of theme park attractions: **land rides** and **water rides**.\n\n\n - **Land rides**\n - `landStartTime[i]` – the earliest time the `ith` land ride can be boarded.\n - `landDuration[i]` – how long the `ith` land ride lasts.\n - **Water rides**\n - `waterStartTime[j]` – the earliest time the `jth` water ride can be boarded.\n - `waterDuration[j]` – how long the `jth` water ride lasts.\n\n\n\nA tourist must experience **exactly one** ride from **each** category, in **either order**.\n\n\n - A ride may be started at its opening time or **any later moment**.\n - If a ride is started at time `t`, it finishes at time `t + duration`.\n - Immediately after finishing one ride the tourist may board the other (if it is already open) or wait until it opens.\n\n\n\nReturn the **earliest possible time** at which the tourist can finish both rides.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** landStartTime = [2,8], landDuration = [4,1], waterStartTime = [6], waterDuration = [3]\n\n\n\n**Output:** 9\n\n\n\n**Explanation:**​​​​​​​\n\n\n - Plan A (land ride 0 → water ride 0):\n - Start land ride 0 at time `landStartTime[0] = 2`. Finish at `2 + landDuration[0] = 6`.\n - Water ride 0 opens at time `waterStartTime[0] = 6`. Start immediately at `6`, finish at `6 + waterDuration[0] = 9`.\n - Plan B (water ride 0 → land ride 1):\n - Start water ride 0 at time `waterStartTime[0] = 6`. Finish at `6 + waterDuration[0] = 9`.\n - Land ride 1 opens at `landStartTime[1] = 8`. Start at time `9`, finish at `9 + landDuration[1] = 10`.\n - Plan C (land ride 1 → water ride 0):\n - Start land ride 1 at time `landStartTime[1] = 8`. Finish at `8 + landDuration[1] = 9`.\n - Water ride 0 opened at `waterStartTime[0] = 6`. Start at time `9`, finish at `9 + waterDuration[0] = 12`.\n - Plan D (water ride 0 → land ride 0):\n - Start water ride 0 at time `waterStartTime[0] = 6`. Finish at `6 + waterDuration[0] = 9`.\n - Land ride 0 opened at `landStartTime[0] = 2`. Start at time `9`, finish at `9 + landDuration[0] = 13`.\n\n\n\nPlan A gives the earliest finish time of 9.\n\n\n\n**Example 2:**\n\n\n\n**Input:** landStartTime = [5], landDuration = [3], waterStartTime = [1], waterDuration = [10]\n\n\n\n**Output:** 14\n\n\n\n**Explanation:**​​​​​​​\n\n\n - Plan A (water ride 0 → land ride 0):\n - Start water ride 0 at time `waterStartTime[0] = 1`. Finish at `1 + waterDuration[0] = 11`.\n - Land ride 0 opened at `landStartTime[0] = 5`. Start immediately at `11` and finish at `11 + landDuration[0] = 14`.\n - Plan B (land ride 0 → water ride 0):\n - Start land ride 0 at time `landStartTime[0] = 5`. Finish at `5 + landDuration[0] = 8`.\n - Water ride 0 opened at `waterStartTime[0] = 1`. Start immediately at `8` and finish at `8 + waterDuration[0] = 18`.\n\n\n\nPlan A provides the earliest finish time of 14.**​​​​​​​**\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= n, m <= 100`\n - `landStartTime.length == landDuration.length == n`\n - `waterStartTime.length == waterDuration.length == m`\n - `1 <= landStartTime[i], landDuration[i], waterStartTime[j], waterDuration[j] <= 1000`",
+    "title": "Earliest Finish Time for Land and Water Rides I"
+  },
+  "3838-weighted-word-mapping": {
+    "folder": "3838-weighted-word-mapping",
+    "solutions": {
+      "py": {
+        "lang_display": "Python3",
+        "file": "solution.py",
+        "runtime": "11 ms",
+        "runtime_pct": 47.19610000000001,
+        "memory": "19.2 MB",
+        "memory_pct": 72.1183,
+        "solved_at": "2026-06-14",
+        "submitted": "2026-06-14 05:56 UTC"
+      }
+    },
+    "meta": {
+      "frontend_id": "3838",
+      "title": "Weighted Word Mapping",
+      "slug": "weighted-word-mapping",
+      "difficulty": "Easy",
+      "tags": [
+        "Array",
+        "String",
+        "Simulation"
+      ],
+      "url": "https://leetcode.com/problems/weighted-word-mapping/"
+    },
+    "statement_md": "You are given an array of strings `words`, where each string represents a word containing lowercase English letters.\n\n\n\nYou are also given an integer array `weights` of length 26, where `weights[i]` represents the weight of the `ith` lowercase English letter.\n\n\n\nThe **weight** of a word is defined as the **sum** of the weights of its characters.\n\n\n\nFor each word, take its weight modulo 26 and map the result to a lowercase English letter using reverse alphabetical order (`0 -> 'z', 1 -> 'y', ..., 25 -> 'a'`).\n\n\n\nReturn a string formed by concatenating the mapped characters for all words in order.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** words = [\"abcd\",\"def\",\"xyz\"], weights = [5,3,12,14,1,2,3,2,10,6,6,9,7,8,7,10,8,9,6,9,9,8,3,7,7,2]\n\n\n\n**Output:** \"rij\"\n\n\n\n**Explanation:**\n\n\n - The weight of `\"abcd\"` is `5 + 3 + 12 + 14 = 34`. The result modulo 26 is `34 % 26 = 8`, which maps to `'r'`.\n - The weight of `\"def\"` is `14 + 1 + 2 = 17`. The result modulo 26 is `17 % 26 = 17`, which maps to `'i'`.\n - The weight of `\"xyz\"` is `7 + 7 + 2 = 16`. The result modulo 26 is `16 % 26 = 16`, which maps to `'j'`.\n\n\n\nThus, the string formed by concatenating the mapped characters is `\"rij\"`.\n\n\n\n**Example 2:**\n\n\n\n**Input:** words = [\"a\",\"b\",\"c\"], weights = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n\n\n\n**Output:** \"yyy\"\n\n\n\n**Explanation:**\n\n\n\nEach word has weight 1. The result modulo 26 is `1 % 26 = 1`, which maps to `'y'`.\n\n\n\nThus, the string formed by concatenating the mapped characters is `\"yyy\"`.\n\n\n\n**Example 3:**\n\n\n\n**Input:** words = [\"abcd\"], weights = [7,5,3,4,3,5,4,9,4,2,2,7,10,2,5,10,6,1,2,2,4,1,3,4,4,5]\n\n\n\n**Output:** \"g\"\n\n\n\n**Explanation:​​​​​​​**\n\n\n\nThe weight of `\"abcd\"` is `7 + 5 + 3 + 4 = 19`. The result modulo 26 is `19 % 26 = 19`, which maps to `'g'`.\n\n\n\nThus, the string formed by concatenating the mapped characters is `\"g\"`.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= words.length <= 100`\n - `1 <= words[i].length <= 10`\n - `weights.length == 26`\n - `1 <= weights[i] <= 100`\n - `words[i]` consists of lowercase English letters.",
+    "frontend_id": "3838",
+    "title": "Weighted Word Mapping",
+    "slug": "weighted-word-mapping",
     "difficulty": "Easy",
-    "lang_display": "C++",
-    "solved_at": "2026-06-02"
+    "lang_display": "Python3",
+    "solved_at": "2026-06-14"
   }
 }
