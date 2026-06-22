@@ -70,37 +70,71 @@
     "title": "Earliest Finish Time for Land and Water Rides I"
   },
   "3838-weighted-word-mapping": {
+    "difficulty": "Easy",
     "folder": "3838-weighted-word-mapping",
-    "solutions": {
-      "py": {
-        "lang_display": "Python3",
-        "file": "solution.py",
-        "runtime": "11 ms",
-        "runtime_pct": 47.19610000000001,
-        "memory": "19.2 MB",
-        "memory_pct": 72.1183,
-        "solved_at": "2026-06-14",
-        "submitted": "2026-06-14 05:56 UTC"
-      }
-    },
+    "frontend_id": "3838",
+    "lang_display": "Python3",
     "meta": {
-      "frontend_id": "3838",
-      "title": "Weighted Word Mapping",
-      "slug": "weighted-word-mapping",
       "difficulty": "Easy",
+      "frontend_id": "3838",
+      "slug": "weighted-word-mapping",
       "tags": [
         "Array",
         "String",
         "Simulation"
       ],
+      "title": "Weighted Word Mapping",
       "url": "https://leetcode.com/problems/weighted-word-mapping/"
     },
-    "statement_md": "You are given an array of strings `words`, where each string represents a word containing lowercase English letters.\n\n\n\nYou are also given an integer array `weights` of length 26, where `weights[i]` represents the weight of the `ith` lowercase English letter.\n\n\n\nThe **weight** of a word is defined as the **sum** of the weights of its characters.\n\n\n\nFor each word, take its weight modulo 26 and map the result to a lowercase English letter using reverse alphabetical order (`0 -> 'z', 1 -> 'y', ..., 25 -> 'a'`).\n\n\n\nReturn a string formed by concatenating the mapped characters for all words in order.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** words = [\"abcd\",\"def\",\"xyz\"], weights = [5,3,12,14,1,2,3,2,10,6,6,9,7,8,7,10,8,9,6,9,9,8,3,7,7,2]\n\n\n\n**Output:** \"rij\"\n\n\n\n**Explanation:**\n\n\n - The weight of `\"abcd\"` is `5 + 3 + 12 + 14 = 34`. The result modulo 26 is `34 % 26 = 8`, which maps to `'r'`.\n - The weight of `\"def\"` is `14 + 1 + 2 = 17`. The result modulo 26 is `17 % 26 = 17`, which maps to `'i'`.\n - The weight of `\"xyz\"` is `7 + 7 + 2 = 16`. The result modulo 26 is `16 % 26 = 16`, which maps to `'j'`.\n\n\n\nThus, the string formed by concatenating the mapped characters is `\"rij\"`.\n\n\n\n**Example 2:**\n\n\n\n**Input:** words = [\"a\",\"b\",\"c\"], weights = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n\n\n\n**Output:** \"yyy\"\n\n\n\n**Explanation:**\n\n\n\nEach word has weight 1. The result modulo 26 is `1 % 26 = 1`, which maps to `'y'`.\n\n\n\nThus, the string formed by concatenating the mapped characters is `\"yyy\"`.\n\n\n\n**Example 3:**\n\n\n\n**Input:** words = [\"abcd\"], weights = [7,5,3,4,3,5,4,9,4,2,2,7,10,2,5,10,6,1,2,2,4,1,3,4,4,5]\n\n\n\n**Output:** \"g\"\n\n\n\n**Explanation:​​​​​​​**\n\n\n\nThe weight of `\"abcd\"` is `7 + 5 + 3 + 4 = 19`. The result modulo 26 is `19 % 26 = 19`, which maps to `'g'`.\n\n\n\nThus, the string formed by concatenating the mapped characters is `\"g\"`.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= words.length <= 100`\n - `1 <= words[i].length <= 10`\n - `weights.length == 26`\n - `1 <= weights[i] <= 100`\n - `words[i]` consists of lowercase English letters.",
-    "frontend_id": "3838",
-    "title": "Weighted Word Mapping",
     "slug": "weighted-word-mapping",
+    "solutions": {
+      "py": {
+        "file": "solution.py",
+        "lang_display": "Python3",
+        "memory": "19.2 MB",
+        "memory_pct": 72.1183,
+        "runtime": "11 ms",
+        "runtime_pct": 47.19610000000001,
+        "solved_at": "2026-06-14",
+        "submitted": "2026-06-14 05:56 UTC"
+      }
+    },
+    "solved_at": "2026-06-14",
+    "statement_md": "You are given an array of strings `words`, where each string represents a word containing lowercase English letters.\n\n\n\nYou are also given an integer array `weights` of length 26, where `weights[i]` represents the weight of the `ith` lowercase English letter.\n\n\n\nThe **weight** of a word is defined as the **sum** of the weights of its characters.\n\n\n\nFor each word, take its weight modulo 26 and map the result to a lowercase English letter using reverse alphabetical order (`0 -> 'z', 1 -> 'y', ..., 25 -> 'a'`).\n\n\n\nReturn a string formed by concatenating the mapped characters for all words in order.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** words = [\"abcd\",\"def\",\"xyz\"], weights = [5,3,12,14,1,2,3,2,10,6,6,9,7,8,7,10,8,9,6,9,9,8,3,7,7,2]\n\n\n\n**Output:** \"rij\"\n\n\n\n**Explanation:**\n\n\n - The weight of `\"abcd\"` is `5 + 3 + 12 + 14 = 34`. The result modulo 26 is `34 % 26 = 8`, which maps to `'r'`.\n - The weight of `\"def\"` is `14 + 1 + 2 = 17`. The result modulo 26 is `17 % 26 = 17`, which maps to `'i'`.\n - The weight of `\"xyz\"` is `7 + 7 + 2 = 16`. The result modulo 26 is `16 % 26 = 16`, which maps to `'j'`.\n\n\n\nThus, the string formed by concatenating the mapped characters is `\"rij\"`.\n\n\n\n**Example 2:**\n\n\n\n**Input:** words = [\"a\",\"b\",\"c\"], weights = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n\n\n\n**Output:** \"yyy\"\n\n\n\n**Explanation:**\n\n\n\nEach word has weight 1. The result modulo 26 is `1 % 26 = 1`, which maps to `'y'`.\n\n\n\nThus, the string formed by concatenating the mapped characters is `\"yyy\"`.\n\n\n\n**Example 3:**\n\n\n\n**Input:** words = [\"abcd\"], weights = [7,5,3,4,3,5,4,9,4,2,2,7,10,2,5,10,6,1,2,2,4,1,3,4,4,5]\n\n\n\n**Output:** \"g\"\n\n\n\n**Explanation:​​​​​​​**\n\n\n\nThe weight of `\"abcd\"` is `7 + 5 + 3 + 4 = 19`. The result modulo 26 is `19 % 26 = 19`, which maps to `'g'`.\n\n\n\nThus, the string formed by concatenating the mapped characters is `\"g\"`.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= words.length <= 100`\n - `1 <= words[i].length <= 10`\n - `weights.length == 26`\n - `1 <= weights[i] <= 100`\n - `words[i]` consists of lowercase English letters.",
+    "title": "Weighted Word Mapping"
+  },
+  "1189-maximum-number-of-balloons": {
+    "folder": "1189-maximum-number-of-balloons",
+    "solutions": {
+      "cpp": {
+        "lang_display": "C++",
+        "file": "solution.cpp",
+        "runtime": "0 ms",
+        "runtime_pct": 100,
+        "memory": "8.9 MB",
+        "memory_pct": 64.86610000000002,
+        "solved_at": "2026-06-22",
+        "submitted": "2026-06-22 14:21 UTC"
+      }
+    },
+    "meta": {
+      "frontend_id": "1189",
+      "title": "Maximum Number of Balloons",
+      "slug": "maximum-number-of-balloons",
+      "difficulty": "Easy",
+      "tags": [
+        "Hash Table",
+        "String",
+        "Counting"
+      ],
+      "url": "https://leetcode.com/problems/maximum-number-of-balloons/"
+    },
+    "statement_md": "Given a string `text`, you want to use the characters of `text` to form as many instances of the word **\"balloon\"** as possible.\n\n\n\nYou can use each character in `text` **at most once**. Return the maximum number of instances that can be formed.\n\n\n\n\n\n**Example 1:**\n\n\n\n**![](https://assets.leetcode.com/uploads/2019/09/05/1536_ex1_upd.JPG)**\n\n\n\n```\nInput: text = \"nlaebolko\"\nOutput: 1\n```\n\n\n\n**Example 2:**\n\n\n\n**![](https://assets.leetcode.com/uploads/2019/09/05/1536_ex2_upd.JPG)**\n\n\n\n```\nInput: text = \"loonbalxballpoon\"\nOutput: 2\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: text = \"leetcode\"\nOutput: 0\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= text.length <= 104`\n - `text` consists of lower case English letters only.\n\n\n\n\n\n**Note:** This question is the same as [2287: Rearrange Characters to Make Target String.](https://leetcode.com/problems/rearrange-characters-to-make-target-string/description/)",
+    "frontend_id": "1189",
+    "title": "Maximum Number of Balloons",
+    "slug": "maximum-number-of-balloons",
     "difficulty": "Easy",
-    "lang_display": "Python3",
-    "solved_at": "2026-06-14"
+    "lang_display": "C++",
+    "solved_at": "2026-06-22"
   }
 }
