@@ -1,3 +1,6 @@
+# Here i Practice DSA 
+Majorly doing Leetcode!!
+
 # LeetCode Solutions
 
 Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
