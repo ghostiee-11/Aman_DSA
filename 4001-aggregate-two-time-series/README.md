@@ -116,8 +116,8 @@ At timestamp 1, the next available value in `series2` is 2 at timestamp 10000000
 ### Python3
 
 - **Runtime:** 199 ms (beats 36.20%)
-- **Memory:** 67.8 MB (beats 83.26%)
-- **Submitted:** 2026-07-26 04:01 UTC
+- **Memory:** 67.6 MB (beats 91.90%)
+- **Submitted:** 2026-07-26 04:05 UTC
 
 See [solution.py](solution.py).
 
