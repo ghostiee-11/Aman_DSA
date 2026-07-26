@@ -2,10 +2,11 @@
 
 Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 
-**Solved: 8** (Easy: 5, Medium: 2, Hard: 1)
+**Solved: 9** (Easy: 6, Medium: 2, Hard: 1)
 
 | # | Title | Difficulty | Language |
 | --- | --- | --- | --- |
+| 628 | [Maximum Product of Three Numbers](628-maximum-product-of-three-numbers/) | Easy | C++ |
 | 1189 | [Maximum Number of Balloons](1189-maximum-number-of-balloons/) | Easy | C++ |
 | 1979 | [Find Greatest Common Divisor of Array](1979-find-greatest-common-divisor-of-array/) | Easy | Python3 |
 | 2144 | [Minimum Cost of Buying Candies With Discount](2144-minimum-cost-of-buying-candies-with-discount/) | Easy | Python3 |
