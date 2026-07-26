@@ -177,22 +177,22 @@
     "frontend_id": "4001",
     "lang_display": "Python3",
     "meta": {
-      "frontend_id": "4001",
-      "title": "Aggregate Two Time Series",
-      "slug": "aggregate-two-time-series",
       "difficulty": "Medium",
+      "frontend_id": "4001",
+      "slug": "aggregate-two-time-series",
       "tags": [],
+      "title": "Aggregate Two Time Series",
       "url": "https://leetcode.com/problems/aggregate-two-time-series/"
     },
     "slug": "aggregate-two-time-series",
     "solutions": {
       "py": {
-        "lang_display": "Python3",
         "file": "solution.py",
-        "runtime": "199 ms",
-        "runtime_pct": 36.20169999999998,
+        "lang_display": "Python3",
         "memory": "67.6 MB",
         "memory_pct": 91.90290000000005,
+        "runtime": "199 ms",
+        "runtime_pct": 36.20169999999998,
         "solved_at": "2026-07-26",
         "submitted": "2026-07-26 04:05 UTC"
       }
@@ -237,24 +237,24 @@
     "frontend_id": "4003",
     "lang_display": "Python3",
     "meta": {
-      "difficulty": "Hard",
       "frontend_id": "4003",
-      "slug": "minimum-cost-path-with-alternating-directions-iii",
-      "tags": [],
       "title": "Minimum Cost Path with Alternating Directions III",
+      "slug": "minimum-cost-path-with-alternating-directions-iii",
+      "difficulty": "Hard",
+      "tags": [],
       "url": "https://leetcode.com/problems/minimum-cost-path-with-alternating-directions-iii/"
     },
     "slug": "minimum-cost-path-with-alternating-directions-iii",
     "solutions": {
       "py": {
-        "file": "solution.py",
         "lang_display": "Python3",
-        "memory": "62 MB",
-        "memory_pct": 81.38030000000003,
-        "runtime": "2898 ms",
-        "runtime_pct": 72.66680000000021,
+        "file": "solution.py",
+        "runtime": "2860 ms",
+        "runtime_pct": 78.22300000000018,
+        "memory": "62.1 MB",
+        "memory_pct": 75.52440000000003,
         "solved_at": "2026-07-26",
-        "submitted": "2026-07-26 04:04 UTC"
+        "submitted": "2026-07-26 04:07 UTC"
       }
     },
     "solved_at": "2026-07-26",

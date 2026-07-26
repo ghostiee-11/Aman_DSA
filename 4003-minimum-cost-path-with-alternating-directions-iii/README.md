@@ -149,9 +149,9 @@ Thus, the total cost is `1 + 2 + 3 + 0 + 6 = 12`.
 
 ### Python3
 
-- **Runtime:** 2898 ms (beats 72.67%)
-- **Memory:** 62 MB (beats 81.38%)
-- **Submitted:** 2026-07-26 04:04 UTC
+- **Runtime:** 2860 ms (beats 78.22%)
+- **Memory:** 62.1 MB (beats 75.52%)
+- **Submitted:** 2026-07-26 04:07 UTC
 
 See [solution.py](solution.py).
 
