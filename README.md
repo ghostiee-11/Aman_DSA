@@ -2,7 +2,7 @@
 
 Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 
-**Solved: 7** (Easy: 5, Medium: 2, Hard: 0)
+**Solved: 8** (Easy: 5, Medium: 2, Hard: 1)
 
 | # | Title | Difficulty | Language |
 | --- | --- | --- | --- |
@@ -13,3 +13,4 @@ Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 | 3838 | [Weighted Word Mapping](3838-weighted-word-mapping/) | Easy | Python3 |
 | 4001 | [Aggregate Two Time Series](4001-aggregate-two-time-series/) | Medium | Python3 |
 | 4002 | [Count Valid Sequences](4002-count-valid-sequences/) | Medium | Python3 |
+| 4003 | [Minimum Cost Path with Alternating Directions III](4003-minimum-cost-path-with-alternating-directions-iii/) | Hard | Python3 |
