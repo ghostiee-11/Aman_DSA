@@ -95,8 +95,8 @@ Return the **maximum** product of any two digits in `n`.
 ### Python3
 
 - **Runtime:** 0 ms (beats 100.00%)
-- **Memory:** 19.4 MB (beats 22.01%)
-- **Submitted:** 2026-07-26 08:56 UTC
+- **Memory:** 19.3 MB (beats 22.01%)
+- **Submitted:** 2026-07-26 08:58 UTC
 
 See [solution.py](solution.py).
 
