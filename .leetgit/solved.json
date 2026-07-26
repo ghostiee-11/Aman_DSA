@@ -262,37 +262,70 @@
     "title": "Minimum Cost Path with Alternating Directions III"
   },
   "628-maximum-product-of-three-numbers": {
+    "difficulty": "Easy",
     "folder": "628-maximum-product-of-three-numbers",
-    "solutions": {
-      "cpp": {
-        "lang_display": "C++",
-        "file": "solution.cpp",
-        "runtime": "8 ms",
-        "runtime_pct": 45.897999999999996,
-        "memory": "31.4 MB",
-        "memory_pct": 96.7959,
-        "solved_at": "2026-07-26",
-        "submitted": "2026-07-26 06:04 UTC"
-      }
-    },
+    "frontend_id": "628",
+    "lang_display": "C++",
     "meta": {
-      "frontend_id": "628",
-      "title": "Maximum Product of Three Numbers",
-      "slug": "maximum-product-of-three-numbers",
       "difficulty": "Easy",
+      "frontend_id": "628",
+      "slug": "maximum-product-of-three-numbers",
       "tags": [
         "Array",
         "Math",
         "Sorting"
       ],
+      "title": "Maximum Product of Three Numbers",
       "url": "https://leetcode.com/problems/maximum-product-of-three-numbers/"
     },
-    "statement_md": "Given an integer array `nums`, *find three numbers whose product is maximum and return the maximum product*.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: nums = [1,2,3]\nOutput: 6\n```\n\n**Example 2:**\n\n\n\n```\nInput: nums = [1,2,3,4]\nOutput: 24\n```\n\n**Example 3:**\n\n\n\n```\nInput: nums = [-1,-2,-3]\nOutput: -6\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `3 <= nums.length <= 104`\n - `-1000 <= nums[i] <= 1000`",
-    "frontend_id": "628",
-    "title": "Maximum Product of Three Numbers",
     "slug": "maximum-product-of-three-numbers",
+    "solutions": {
+      "cpp": {
+        "file": "solution.cpp",
+        "lang_display": "C++",
+        "memory": "31.4 MB",
+        "memory_pct": 96.7959,
+        "runtime": "8 ms",
+        "runtime_pct": 45.897999999999996,
+        "solved_at": "2026-07-26",
+        "submitted": "2026-07-26 06:04 UTC"
+      }
+    },
+    "solved_at": "2026-07-26",
+    "statement_md": "Given an integer array `nums`, *find three numbers whose product is maximum and return the maximum product*.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: nums = [1,2,3]\nOutput: 6\n```\n\n**Example 2:**\n\n\n\n```\nInput: nums = [1,2,3,4]\nOutput: 24\n```\n\n**Example 3:**\n\n\n\n```\nInput: nums = [-1,-2,-3]\nOutput: -6\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `3 <= nums.length <= 104`\n - `-1000 <= nums[i] <= 1000`",
+    "title": "Maximum Product of Three Numbers"
+  },
+  "3536-maximum-product-of-two-digits": {
+    "folder": "3536-maximum-product-of-two-digits",
+    "solutions": {
+      "py": {
+        "lang_display": "Python3",
+        "file": "solution.py",
+        "runtime": "0 ms",
+        "runtime_pct": 100,
+        "memory": "19.4 MB",
+        "memory_pct": 22.01140000000001,
+        "solved_at": "2026-07-26",
+        "submitted": "2026-07-26 08:56 UTC"
+      }
+    },
+    "meta": {
+      "frontend_id": "3536",
+      "title": "Maximum Product of Two Digits",
+      "slug": "maximum-product-of-two-digits",
+      "difficulty": "Easy",
+      "tags": [
+        "Math",
+        "Sorting"
+      ],
+      "url": "https://leetcode.com/problems/maximum-product-of-two-digits/"
+    },
+    "statement_md": "You are given a positive integer `n`.\n\n\n\nReturn the **maximum** product of any two digits in `n`.\n\n\n\n**Note:** You may use the **same** digit twice if it appears more than once in `n`.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** n = 31\n\n\n\n**Output:** 3\n\n\n\n**Explanation:**\n\n\n - The digits of `n` are `[3, 1]`.\n - The possible products of any two digits are: `3 * 1 = 3`.\n - The maximum product is 3.\n\n\n\n**Example 2:**\n\n\n\n**Input:** n = 22\n\n\n\n**Output:** 4\n\n\n\n**Explanation:**\n\n\n - The digits of `n` are `[2, 2]`.\n - The possible products of any two digits are: `2 * 2 = 4`.\n - The maximum product is 4.\n\n\n\n**Example 3:**\n\n\n\n**Input:** n = 124\n\n\n\n**Output:** 8\n\n\n\n**Explanation:**\n\n\n - The digits of `n` are `[1, 2, 4]`.\n - The possible products of any two digits are: `1 * 2 = 2`, `1 * 4 = 4`, `2 * 4 = 8`.\n - The maximum product is 8.\n\n\n\n\n\n**Constraints:**\n\n\n - `10 <= n <= 109`",
+    "frontend_id": "3536",
+    "title": "Maximum Product of Two Digits",
+    "slug": "maximum-product-of-two-digits",
     "difficulty": "Easy",
-    "lang_display": "C++",
+    "lang_display": "Python3",
     "solved_at": "2026-07-26"
   }
 }
