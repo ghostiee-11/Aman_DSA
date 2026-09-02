@@ -2,7 +2,7 @@
 
 Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 
-**Solved: 12** (Easy: 8, Medium: 3, Hard: 1)
+**Solved: 13** (Easy: 9, Medium: 3, Hard: 1)
 
 | # | Title | Difficulty | Language |
 | --- | --- | --- | --- |
@@ -15,6 +15,7 @@ Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 | 3568 | [Minimum Moves to Clean the Classroom](3568-minimum-moves-to-clean-the-classroom/) | Medium | Python3 |
 | 3633 | [Earliest Finish Time for Land and Water Rides I](3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy | C++ |
 | 3838 | [Weighted Word Mapping](3838-weighted-word-mapping/) | Easy | Python3 |
+| 3875 | [Construct Uniform Parity Array I](3875-construct-uniform-parity-array-i/) | Easy | Python3 |
 | 4001 | [Aggregate Two Time Series](4001-aggregate-two-time-series/) | Medium | Python3 |
 | 4002 | [Count Valid Sequences](4002-count-valid-sequences/) | Medium | Python3 |
 | 4003 | [Minimum Cost Path with Alternating Directions III](4003-minimum-cost-path-with-alternating-directions-iii/) | Hard | Python3 |

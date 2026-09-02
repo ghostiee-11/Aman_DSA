@@ -168,6 +168,42 @@
     "statement_md": "You are given a positive integer `n`.\n\n\n\nReturn the **maximum** product of any two digits in `n`.\n\n\n\n**Note:** You may use the **same** digit twice if it appears more than once in `n`.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** n = 31\n\n\n\n**Output:** 3\n\n\n\n**Explanation:**\n\n\n - The digits of `n` are `[3, 1]`.\n - The possible products of any two digits are: `3 * 1 = 3`.\n - The maximum product is 3.\n\n\n\n**Example 2:**\n\n\n\n**Input:** n = 22\n\n\n\n**Output:** 4\n\n\n\n**Explanation:**\n\n\n - The digits of `n` are `[2, 2]`.\n - The possible products of any two digits are: `2 * 2 = 4`.\n - The maximum product is 4.\n\n\n\n**Example 3:**\n\n\n\n**Input:** n = 124\n\n\n\n**Output:** 8\n\n\n\n**Explanation:**\n\n\n - The digits of `n` are `[1, 2, 4]`.\n - The possible products of any two digits are: `1 * 2 = 2`, `1 * 4 = 4`, `2 * 4 = 8`.\n - The maximum product is 8.\n\n\n\n\n\n**Constraints:**\n\n\n - `10 <= n <= 109`",
     "title": "Maximum Product of Two Digits"
   },
+  "3568-minimum-moves-to-clean-the-classroom": {
+    "difficulty": "Medium",
+    "folder": "3568-minimum-moves-to-clean-the-classroom",
+    "frontend_id": "3568",
+    "lang_display": "Python3",
+    "meta": {
+      "difficulty": "Medium",
+      "frontend_id": "3568",
+      "slug": "minimum-moves-to-clean-the-classroom",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Bit Manipulation",
+        "Breadth-First Search",
+        "Matrix"
+      ],
+      "title": "Minimum Moves to Clean the Classroom",
+      "url": "https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/"
+    },
+    "slug": "minimum-moves-to-clean-the-classroom",
+    "solutions": {
+      "py": {
+        "file": "solution.py",
+        "lang_display": "Python3",
+        "memory": "107 MB",
+        "memory_pct": 15.788999999999984,
+        "runtime": "7665 ms",
+        "runtime_pct": 15.788799999999974,
+        "solved_at": "2026-09-01",
+        "submitted": "2026-09-01 18:35 UTC"
+      }
+    },
+    "solved_at": "2026-09-01",
+    "statement_md": "You are given an `m x n` grid `classroom` where a student volunteer is tasked with cleaning up litter scattered around the room. Each cell in the grid is one of the following:\n\n\n - `'S'`: Starting position of the student\n - `'L'`: Litter that must be collected (once collected, the cell becomes empty)\n - `'R'`: Reset area that restores the student's energy to full capacity, regardless of their current energy level (can be used multiple times)\n - `'X'`: Obstacle the student cannot pass through\n - `'.'`: Empty space\n\n\n\nYou are also given an integer `energy`, representing the student's maximum energy capacity. The student starts with this energy from the starting position `'S'`.\n\n\n\nEach move to an adjacent cell (up, down, left, or right) costs 1 unit of energy. If the energy reaches 0, the student can only continue if they are on a reset area `'R'`, which resets the energy to its **maximum** capacity `energy`.\n\n\n\nReturn the **minimum** number of moves required to collect all litter items, or `-1` if it's impossible.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** classroom = [\"S.\", \"XL\"], energy = 2\n\n\n\n**Output:** 2\n\n\n\n**Explanation:**\n\n\n - The student starts at cell `(0, 0)` with 2 units of energy.\n - Since cell `(1, 0)` contains an obstacle 'X', the student cannot move directly downward.\n - A valid sequence of moves to collect all litter is as follows:\n - Move 1: From `(0, 0)` → `(0, 1)` with 1 unit of energy and 1 unit remaining.\n - Move 2: From `(0, 1)` → `(1, 1)` to collect the litter `'L'`.\n - The student collects all the litter using 2 moves. Thus, the output is 2.\n\n\n\n**Example 2:**\n\n\n\n**Input:** classroom = [\"LS\", \"RL\"], energy = 4\n\n\n\n**Output:** 3\n\n\n\n**Explanation:**\n\n\n - The student starts at cell `(0, 1)` with 4 units of energy.\n - A valid sequence of moves to collect all litter is as follows:\n - Move 1: From `(0, 1)` → `(0, 0)` to collect the first litter `'L'` with 1 unit of energy used and 3 units remaining.\n - Move 2: From `(0, 0)` → `(1, 0)` to `'R'` to reset and restore energy back to 4.\n - Move 3: From `(1, 0)` → `(1, 1)` to collect the second litter `'L'`.\n - The student collects all the litter using 3 moves. Thus, the output is 3.\n\n\n\n**Example 3:**\n\n\n\n**Input:** classroom = [\"L.S\", \"RXL\"], energy = 3\n\n\n\n**Output:** -1\n\n\n\n**Explanation:**\n\n\n\nNo valid path collects all `'L'`.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= m == classroom.length <= 20`\n - `1 <= n == classroom[i].length <= 20`\n - `classroom[i][j]` is one of `'S'`, `'L'`, `'R'`, `'X'`, or `'.'`\n - `1 <= energy <= 50`\n - There is exactly **one** `'S'` in the grid.\n - There are **at most** 10 `'L'` cells in the grid.",
+    "title": "Minimum Moves to Clean the Classroom"
+  },
   "3633-earliest-finish-time-for-land-and-water-rides-i": {
     "difficulty": "Easy",
     "folder": "3633-earliest-finish-time-for-land-and-water-rides-i",
@@ -362,40 +398,37 @@
     "statement_md": "Given an integer array `nums`, *find three numbers whose product is maximum and return the maximum product*.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: nums = [1,2,3]\nOutput: 6\n```\n\n**Example 2:**\n\n\n\n```\nInput: nums = [1,2,3,4]\nOutput: 24\n```\n\n**Example 3:**\n\n\n\n```\nInput: nums = [-1,-2,-3]\nOutput: -6\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `3 <= nums.length <= 104`\n - `-1000 <= nums[i] <= 1000`",
     "title": "Maximum Product of Three Numbers"
   },
-  "3568-minimum-moves-to-clean-the-classroom": {
-    "folder": "3568-minimum-moves-to-clean-the-classroom",
+  "3875-construct-uniform-parity-array-i": {
+    "folder": "3875-construct-uniform-parity-array-i",
     "solutions": {
       "py": {
         "lang_display": "Python3",
         "file": "solution.py",
-        "runtime": "7665 ms",
-        "runtime_pct": 15.788799999999974,
-        "memory": "107 MB",
-        "memory_pct": 15.788999999999984,
-        "solved_at": "2026-09-01",
-        "submitted": "2026-09-01 18:35 UTC"
+        "runtime": "0 ms",
+        "runtime_pct": 100,
+        "memory": "19.2 MB",
+        "memory_pct": 84.46119999999999,
+        "solved_at": "2026-09-02",
+        "submitted": "2026-09-02 19:43 UTC"
       }
     },
     "meta": {
-      "frontend_id": "3568",
-      "title": "Minimum Moves to Clean the Classroom",
-      "slug": "minimum-moves-to-clean-the-classroom",
-      "difficulty": "Medium",
+      "frontend_id": "3875",
+      "title": "Construct Uniform Parity Array I",
+      "slug": "construct-uniform-parity-array-i",
+      "difficulty": "Easy",
       "tags": [
         "Array",
-        "Hash Table",
-        "Bit Manipulation",
-        "Breadth-First Search",
-        "Matrix"
+        "Math"
       ],
-      "url": "https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/"
+      "url": "https://leetcode.com/problems/construct-uniform-parity-array-i/"
     },
-    "statement_md": "You are given an `m x n` grid `classroom` where a student volunteer is tasked with cleaning up litter scattered around the room. Each cell in the grid is one of the following:\n\n\n - `'S'`: Starting position of the student\n - `'L'`: Litter that must be collected (once collected, the cell becomes empty)\n - `'R'`: Reset area that restores the student's energy to full capacity, regardless of their current energy level (can be used multiple times)\n - `'X'`: Obstacle the student cannot pass through\n - `'.'`: Empty space\n\n\n\nYou are also given an integer `energy`, representing the student's maximum energy capacity. The student starts with this energy from the starting position `'S'`.\n\n\n\nEach move to an adjacent cell (up, down, left, or right) costs 1 unit of energy. If the energy reaches 0, the student can only continue if they are on a reset area `'R'`, which resets the energy to its **maximum** capacity `energy`.\n\n\n\nReturn the **minimum** number of moves required to collect all litter items, or `-1` if it's impossible.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** classroom = [\"S.\", \"XL\"], energy = 2\n\n\n\n**Output:** 2\n\n\n\n**Explanation:**\n\n\n - The student starts at cell `(0, 0)` with 2 units of energy.\n - Since cell `(1, 0)` contains an obstacle 'X', the student cannot move directly downward.\n - A valid sequence of moves to collect all litter is as follows:\n - Move 1: From `(0, 0)` → `(0, 1)` with 1 unit of energy and 1 unit remaining.\n - Move 2: From `(0, 1)` → `(1, 1)` to collect the litter `'L'`.\n - The student collects all the litter using 2 moves. Thus, the output is 2.\n\n\n\n**Example 2:**\n\n\n\n**Input:** classroom = [\"LS\", \"RL\"], energy = 4\n\n\n\n**Output:** 3\n\n\n\n**Explanation:**\n\n\n - The student starts at cell `(0, 1)` with 4 units of energy.\n - A valid sequence of moves to collect all litter is as follows:\n - Move 1: From `(0, 1)` → `(0, 0)` to collect the first litter `'L'` with 1 unit of energy used and 3 units remaining.\n - Move 2: From `(0, 0)` → `(1, 0)` to `'R'` to reset and restore energy back to 4.\n - Move 3: From `(1, 0)` → `(1, 1)` to collect the second litter `'L'`.\n - The student collects all the litter using 3 moves. Thus, the output is 3.\n\n\n\n**Example 3:**\n\n\n\n**Input:** classroom = [\"L.S\", \"RXL\"], energy = 3\n\n\n\n**Output:** -1\n\n\n\n**Explanation:**\n\n\n\nNo valid path collects all `'L'`.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= m == classroom.length <= 20`\n - `1 <= n == classroom[i].length <= 20`\n - `classroom[i][j]` is one of `'S'`, `'L'`, `'R'`, `'X'`, or `'.'`\n - `1 <= energy <= 50`\n - There is exactly **one** `'S'` in the grid.\n - There are **at most** 10 `'L'` cells in the grid.",
-    "frontend_id": "3568",
-    "title": "Minimum Moves to Clean the Classroom",
-    "slug": "minimum-moves-to-clean-the-classroom",
-    "difficulty": "Medium",
+    "statement_md": "You are given an array `nums1` of `n` **distinct** integers.\n\n\n\nYou want to construct another array `nums2` of length `n` such that the elements in `nums2` are either **all odd or all even**.\n\n\n\nFor each index `i`, you must choose **exactly one** of the following (in any order):\n\n\n - `nums2[i] = nums1[i]`\n - `nums2[i] = nums1[i] - nums1[j]`, for an index `j != i`\n\n\n\nReturn `true` if it is possible to construct such an array, otherwise, return `false`.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** nums1 = [2,3]\n\n\n\n**Output:** true\n\n\n\n**Explanation:**\n\n\n - Choose `nums2[0] = nums1[0] - nums1[1] = 2 - 3 = -1`.\n - Choose `nums2[1] = nums1[1] = 3`.\n - `nums2 = [-1, 3]`, and both elements are odd. Thus, the answer is `true`​​​​​​​.\n\n\n\n**Example 2:**\n\n\n\n**Input:** nums1 = [4,6]\n\n\n\n**Output:** true\n\n\n\n**Explanation:**​​​​​​​\n\n\n - Choose `nums2[0] = nums1[0] = 4`.\n - Choose `nums2[1] = nums1[1] = 6`.\n - `nums2 = [4, 6]`, and all elements are even. Thus, the answer is `true`.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= n == nums1.length <= 100`\n - `1 <= nums1[i] <= 100`\n - `nums1` consists of distinct integers.",
+    "frontend_id": "3875",
+    "title": "Construct Uniform Parity Array I",
+    "slug": "construct-uniform-parity-array-i",
+    "difficulty": "Easy",
     "lang_display": "Python3",
-    "solved_at": "2026-09-01"
+    "solved_at": "2026-09-02"
   }
 }
