@@ -274,6 +274,39 @@
     "statement_md": "You are given an array of strings `words`, where each string represents a word containing lowercase English letters.\n\n\n\nYou are also given an integer array `weights` of length 26, where `weights[i]` represents the weight of the `ith` lowercase English letter.\n\n\n\nThe **weight** of a word is defined as the **sum** of the weights of its characters.\n\n\n\nFor each word, take its weight modulo 26 and map the result to a lowercase English letter using reverse alphabetical order (`0 -> 'z', 1 -> 'y', ..., 25 -> 'a'`).\n\n\n\nReturn a string formed by concatenating the mapped characters for all words in order.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** words = [\"abcd\",\"def\",\"xyz\"], weights = [5,3,12,14,1,2,3,2,10,6,6,9,7,8,7,10,8,9,6,9,9,8,3,7,7,2]\n\n\n\n**Output:** \"rij\"\n\n\n\n**Explanation:**\n\n\n - The weight of `\"abcd\"` is `5 + 3 + 12 + 14 = 34`. The result modulo 26 is `34 % 26 = 8`, which maps to `'r'`.\n - The weight of `\"def\"` is `14 + 1 + 2 = 17`. The result modulo 26 is `17 % 26 = 17`, which maps to `'i'`.\n - The weight of `\"xyz\"` is `7 + 7 + 2 = 16`. The result modulo 26 is `16 % 26 = 16`, which maps to `'j'`.\n\n\n\nThus, the string formed by concatenating the mapped characters is `\"rij\"`.\n\n\n\n**Example 2:**\n\n\n\n**Input:** words = [\"a\",\"b\",\"c\"], weights = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n\n\n\n**Output:** \"yyy\"\n\n\n\n**Explanation:**\n\n\n\nEach word has weight 1. The result modulo 26 is `1 % 26 = 1`, which maps to `'y'`.\n\n\n\nThus, the string formed by concatenating the mapped characters is `\"yyy\"`.\n\n\n\n**Example 3:**\n\n\n\n**Input:** words = [\"abcd\"], weights = [7,5,3,4,3,5,4,9,4,2,2,7,10,2,5,10,6,1,2,2,4,1,3,4,4,5]\n\n\n\n**Output:** \"g\"\n\n\n\n**Explanation:​​​​​​​**\n\n\n\nThe weight of `\"abcd\"` is `7 + 5 + 3 + 4 = 19`. The result modulo 26 is `19 % 26 = 19`, which maps to `'g'`.\n\n\n\nThus, the string formed by concatenating the mapped characters is `\"g\"`.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= words.length <= 100`\n - `1 <= words[i].length <= 10`\n - `weights.length == 26`\n - `1 <= weights[i] <= 100`\n - `words[i]` consists of lowercase English letters.",
     "title": "Weighted Word Mapping"
   },
+  "3875-construct-uniform-parity-array-i": {
+    "difficulty": "Easy",
+    "folder": "3875-construct-uniform-parity-array-i",
+    "frontend_id": "3875",
+    "lang_display": "Python3",
+    "meta": {
+      "difficulty": "Easy",
+      "frontend_id": "3875",
+      "slug": "construct-uniform-parity-array-i",
+      "tags": [
+        "Array",
+        "Math"
+      ],
+      "title": "Construct Uniform Parity Array I",
+      "url": "https://leetcode.com/problems/construct-uniform-parity-array-i/"
+    },
+    "slug": "construct-uniform-parity-array-i",
+    "solutions": {
+      "py": {
+        "file": "solution.py",
+        "lang_display": "Python3",
+        "memory": "19.2 MB",
+        "memory_pct": 84.46119999999999,
+        "runtime": "0 ms",
+        "runtime_pct": 100,
+        "solved_at": "2026-09-02",
+        "submitted": "2026-09-02 19:43 UTC"
+      }
+    },
+    "solved_at": "2026-09-02",
+    "statement_md": "You are given an array `nums1` of `n` **distinct** integers.\n\n\n\nYou want to construct another array `nums2` of length `n` such that the elements in `nums2` are either **all odd or all even**.\n\n\n\nFor each index `i`, you must choose **exactly one** of the following (in any order):\n\n\n - `nums2[i] = nums1[i]`\n - `nums2[i] = nums1[i] - nums1[j]`, for an index `j != i`\n\n\n\nReturn `true` if it is possible to construct such an array, otherwise, return `false`.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** nums1 = [2,3]\n\n\n\n**Output:** true\n\n\n\n**Explanation:**\n\n\n - Choose `nums2[0] = nums1[0] - nums1[1] = 2 - 3 = -1`.\n - Choose `nums2[1] = nums1[1] = 3`.\n - `nums2 = [-1, 3]`, and both elements are odd. Thus, the answer is `true`​​​​​​​.\n\n\n\n**Example 2:**\n\n\n\n**Input:** nums1 = [4,6]\n\n\n\n**Output:** true\n\n\n\n**Explanation:**​​​​​​​\n\n\n - Choose `nums2[0] = nums1[0] = 4`.\n - Choose `nums2[1] = nums1[1] = 6`.\n - `nums2 = [4, 6]`, and all elements are even. Thus, the answer is `true`.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= n == nums1.length <= 100`\n - `1 <= nums1[i] <= 100`\n - `nums1` consists of distinct integers.",
+    "title": "Construct Uniform Parity Array I"
+  },
   "4001-aggregate-two-time-series": {
     "difficulty": "Medium",
     "folder": "4001-aggregate-two-time-series",
@@ -398,37 +431,37 @@
     "statement_md": "Given an integer array `nums`, *find three numbers whose product is maximum and return the maximum product*.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: nums = [1,2,3]\nOutput: 6\n```\n\n**Example 2:**\n\n\n\n```\nInput: nums = [1,2,3,4]\nOutput: 24\n```\n\n**Example 3:**\n\n\n\n```\nInput: nums = [-1,-2,-3]\nOutput: -6\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `3 <= nums.length <= 104`\n - `-1000 <= nums[i] <= 1000`",
     "title": "Maximum Product of Three Numbers"
   },
-  "3875-construct-uniform-parity-array-i": {
-    "folder": "3875-construct-uniform-parity-array-i",
+  "3876-construct-uniform-parity-array-ii": {
+    "folder": "3876-construct-uniform-parity-array-ii",
     "solutions": {
       "py": {
         "lang_display": "Python3",
         "file": "solution.py",
-        "runtime": "0 ms",
-        "runtime_pct": 100,
-        "memory": "19.2 MB",
-        "memory_pct": 84.46119999999999,
-        "solved_at": "2026-09-02",
-        "submitted": "2026-09-02 19:43 UTC"
+        "runtime": "42 ms",
+        "runtime_pct": 72.56049999999993,
+        "memory": "35.1 MB",
+        "memory_pct": 93.90229999999998,
+        "solved_at": "2026-09-03",
+        "submitted": "2026-09-03 18:25 UTC"
       }
     },
     "meta": {
-      "frontend_id": "3875",
-      "title": "Construct Uniform Parity Array I",
-      "slug": "construct-uniform-parity-array-i",
-      "difficulty": "Easy",
+      "frontend_id": "3876",
+      "title": "Construct Uniform Parity Array II",
+      "slug": "construct-uniform-parity-array-ii",
+      "difficulty": "Medium",
       "tags": [
         "Array",
         "Math"
       ],
-      "url": "https://leetcode.com/problems/construct-uniform-parity-array-i/"
+      "url": "https://leetcode.com/problems/construct-uniform-parity-array-ii/"
     },
-    "statement_md": "You are given an array `nums1` of `n` **distinct** integers.\n\n\n\nYou want to construct another array `nums2` of length `n` such that the elements in `nums2` are either **all odd or all even**.\n\n\n\nFor each index `i`, you must choose **exactly one** of the following (in any order):\n\n\n - `nums2[i] = nums1[i]`\n - `nums2[i] = nums1[i] - nums1[j]`, for an index `j != i`\n\n\n\nReturn `true` if it is possible to construct such an array, otherwise, return `false`.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** nums1 = [2,3]\n\n\n\n**Output:** true\n\n\n\n**Explanation:**\n\n\n - Choose `nums2[0] = nums1[0] - nums1[1] = 2 - 3 = -1`.\n - Choose `nums2[1] = nums1[1] = 3`.\n - `nums2 = [-1, 3]`, and both elements are odd. Thus, the answer is `true`​​​​​​​.\n\n\n\n**Example 2:**\n\n\n\n**Input:** nums1 = [4,6]\n\n\n\n**Output:** true\n\n\n\n**Explanation:**​​​​​​​\n\n\n - Choose `nums2[0] = nums1[0] = 4`.\n - Choose `nums2[1] = nums1[1] = 6`.\n - `nums2 = [4, 6]`, and all elements are even. Thus, the answer is `true`.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= n == nums1.length <= 100`\n - `1 <= nums1[i] <= 100`\n - `nums1` consists of distinct integers.",
-    "frontend_id": "3875",
-    "title": "Construct Uniform Parity Array I",
-    "slug": "construct-uniform-parity-array-i",
-    "difficulty": "Easy",
+    "statement_md": "You are given an array `nums1` of `n` **distinct** integers.\n\n\n\nYou want to construct another array `nums2` of length `n` such that the elements in `nums2` are either **all odd or all even**.\n\n\n\nFor each index `i`, you must choose **exactly one** of the following (in any order):\n\n\n - `nums2[i] = nums1[i]`​​​​​​​\n - `nums2[i] = nums1[i] - nums1[j]`, for an index `j != i`, such that `nums1[i] - nums1[j] >= 1`\n\n\n\nReturn `true` if it is possible to construct such an array, otherwise return `false`.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** nums1 = [1,4,7]\n\n\n\n**Output:** true\n\n\n\n**Explanation:**​​​​​​​​​​​​​​\n\n\n - Set `nums2[0] = nums1[0] = 1`.\n - Set `nums2[1] = nums1[1] - nums1[0] = 4 - 1 = 3`.\n - Set `nums2[2] = nums1[2] = 7`.\n - `nums2 = [1, 3, 7]`, and all elements are odd. Thus, the answer is `true`.\n\n\n\n**Example 2:**\n\n\n\n**Input:** nums1 = [2,3]\n\n\n\n**Output:** false\n\n\n\n**Explanation:**\n\n\n\nIt is not possible to construct `nums2` such that all elements have the same parity. Thus, the answer is `false`.\n\n\n\n**Example 3:**\n\n\n\n**Input:** nums1 = [4,6]\n\n\n\n**Output:** true\n\n\n\n**Explanation:**\n\n\n - Set `nums2[0] = nums1[0] = 4`.\n - Set `nums2[1] = nums1[1] = 6`.\n - `nums2 = [4, 6]`, and all elements are even. Thus, the answer is `true`.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= n == nums1.length <= 105`\n - `1 <= nums1[i] <= 109`\n - `nums1` consists of distinct integers.",
+    "frontend_id": "3876",
+    "title": "Construct Uniform Parity Array II",
+    "slug": "construct-uniform-parity-array-ii",
+    "difficulty": "Medium",
     "lang_display": "Python3",
-    "solved_at": "2026-09-02"
+    "solved_at": "2026-09-03"
   }
 }
