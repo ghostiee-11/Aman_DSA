@@ -2,7 +2,7 @@
 
 Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 
-**Solved: 15** (Easy: 10, Medium: 4, Hard: 1)
+**Solved: 16** (Easy: 10, Medium: 5, Hard: 1)
 
 | # | Title | Difficulty | Language |
 | --- | --- | --- | --- |
@@ -18,6 +18,7 @@ Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 | 3875 | [Construct Uniform Parity Array I](3875-construct-uniform-parity-array-i/) | Easy | Python3 |
 | 3876 | [Construct Uniform Parity Array II](3876-construct-uniform-parity-array-ii/) | Medium | Python3 |
 | 3903 | [Smallest Stable Index I](3903-smallest-stable-index-i/) | Easy | Python3 |
+| 3904 | [Smallest Stable Index II](3904-smallest-stable-index-ii/) | Medium | Python3 |
 | 4001 | [Aggregate Two Time Series](4001-aggregate-two-time-series/) | Medium | Python3 |
 | 4002 | [Count Valid Sequences](4002-count-valid-sequences/) | Medium | Python3 |
 | 4003 | [Minimum Cost Path with Alternating Directions III](4003-minimum-cost-path-with-alternating-directions-iii/) | Hard | Python3 |
