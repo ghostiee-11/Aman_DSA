@@ -373,6 +373,39 @@
     "statement_md": "You are given an integer array `nums` of length `n` and an integer `k`.\n\n\n\nFor each index `i`, define its **instability score** as `max(nums[0..i]) - min(nums[i..n - 1])`.\n\n\n\nIn other words:\n\n\n - `max(nums[0..i])` is the **largest** value among the elements from index 0 to index `i`.\n - `min(nums[i..n - 1])` is the **smallest** value among the elements from index `i` to index `n - 1`.\n\n\n\nAn index `i` is called **stable** if its instability score is **less than or equal to** `k`.\n\n\n\nReturn the **smallest** stable index. If no such index exists, return -1.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** nums = [5,0,1,4], k = 3\n\n\n\n**Output:** 3\n\n\n\n**Explanation:**\n\n\n - At index 0: The maximum in `[5]` is 5, and the minimum in `[5, 0, 1, 4]` is 0, so the instability score is `5 - 0 = 5`.\n - At index 1: The maximum in `[5, 0]` is 5, and the minimum in `[0, 1, 4]` is 0, so the instability score is `5 - 0 = 5`.\n - At index 2: The maximum in `[5, 0, 1]` is 5, and the minimum in `[1, 4]` is 1, so the instability score is `5 - 1 = 4`.\n - At index 3: The maximum in `[5, 0, 1, 4]` is 5, and the minimum in `[4]` is 4, so the instability score is `5 - 4 = 1`.\n - This is the first index with an instability score less than or equal to `k = 3`. Thus, the answer is 3.\n\n\n\n**Example 2:**\n\n\n\n**Input:** nums = [3,2,1], k = 1\n\n\n\n**Output:** -1\n\n\n\n**Explanation:**\n\n\n - At index 0, the instability score is `3 - 1 = 2`.\n - At index 1, the instability score is `3 - 1 = 2`.\n - At index 2, the instability score is `3 - 1 = 2`.\n - None of these values is less than or equal to `k = 1`, so the answer is -1.\n\n\n\n**Example 3:**\n\n\n\n**Input:** nums = [0], k = 0\n\n\n\n**Output:** 0\n\n\n\n**Explanation:**\n\n\n\nAt index 0, the instability score is `0 - 0 = 0`, which is less than or equal to `k = 0`. Therefore, the answer is 0.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= nums.length <= 100`\n - `0 <= nums[i] <= 109`\n - `0 <= k <= 109`",
     "title": "Smallest Stable Index I"
   },
+  "3904-smallest-stable-index-ii": {
+    "difficulty": "Medium",
+    "folder": "3904-smallest-stable-index-ii",
+    "frontend_id": "3904",
+    "lang_display": "Python3",
+    "meta": {
+      "difficulty": "Medium",
+      "frontend_id": "3904",
+      "slug": "smallest-stable-index-ii",
+      "tags": [
+        "Array",
+        "Prefix Sum"
+      ],
+      "title": "Smallest Stable Index II",
+      "url": "https://leetcode.com/problems/smallest-stable-index-ii/"
+    },
+    "slug": "smallest-stable-index-ii",
+    "solutions": {
+      "py": {
+        "file": "solution.py",
+        "lang_display": "Python3",
+        "memory": "32.7 MB",
+        "memory_pct": 57.27279999999999,
+        "runtime": "148 ms",
+        "runtime_pct": 79.09200000000011,
+        "solved_at": "2026-09-05",
+        "submitted": "2026-09-05 13:36 UTC"
+      }
+    },
+    "solved_at": "2026-09-05",
+    "statement_md": "You are given an integer array `nums` of length `n` and an integer `k`.\n\n\n\nFor each index `i`, define its **instability score** as `max(nums[0..i]) - min(nums[i..n - 1])`.\n\n\n\nIn other words:\n\n\n - `max(nums[0..i])` is the **largest** value among the elements from index 0 to index `i`.\n - `min(nums[i..n - 1])` is the **smallest** value among the elements from index `i` to index `n - 1`.\n\n\n\nAn index `i` is called **stable** if its instability score is **less than or equal to** `k`.\n\n\n\nReturn the **smallest** stable index. If no such index exists, return -1.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** nums = [5,0,1,4], k = 3\n\n\n\n**Output:** 3\n\n\n\n**Explanation:**\n\n\n - At index 0: The maximum in `[5]` is 5, and the minimum in `[5, 0, 1, 4]` is 0, so the instability score is `5 - 0 = 5`.\n - At index 1: The maximum in `[5, 0]` is 5, and the minimum in `[0, 1, 4]` is 0, so the instability score is `5 - 0 = 5`.\n - At index 2: The maximum in `[5, 0, 1]` is 5, and the minimum in `[1, 4]` is 1, so the instability score is `5 - 1 = 4`.\n - At index 3: The maximum in `[5, 0, 1, 4]` is 5, and the minimum in `[4]` is 4, so the instability score is `5 - 4 = 1`.\n - This is the first index with an instability score less than or equal to `k = 3`. Thus, the answer is 3.\n\n\n\n**Example 2:**\n\n\n\n**Input:** nums = [3,2,1], k = 1\n\n\n\n**Output:** -1\n\n\n\n**Explanation:**\n\n\n - At index 0, the instability score is `3 - 1 = 2`.\n - At index 1, the instability score is `3 - 1 = 2`.\n - At index 2, the instability score is `3 - 1 = 2`.\n - None of these values is less than or equal to `k = 1`, so the answer is -1.\n\n\n\n**Example 3:**\n\n\n\n**Input:** nums = [0], k = 0\n\n\n\n**Output:** 0\n\n\n\n**Explanation:**\n\n\n\nAt index 0, the instability score is `0 - 0 = 0`, which is less than or equal to `k = 0`. Therefore, the answer is 0.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= nums.length <= 105`\n - `0 <= nums[i] <= 109`\n - `0 <= k <= 109`",
+    "title": "Smallest Stable Index II"
+  },
   "4001-aggregate-two-time-series": {
     "difficulty": "Medium",
     "folder": "4001-aggregate-two-time-series",
@@ -497,37 +530,37 @@
     "statement_md": "Given an integer array `nums`, *find three numbers whose product is maximum and return the maximum product*.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: nums = [1,2,3]\nOutput: 6\n```\n\n**Example 2:**\n\n\n\n```\nInput: nums = [1,2,3,4]\nOutput: 24\n```\n\n**Example 3:**\n\n\n\n```\nInput: nums = [-1,-2,-3]\nOutput: -6\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `3 <= nums.length <= 104`\n - `-1000 <= nums[i] <= 1000`",
     "title": "Maximum Product of Three Numbers"
   },
-  "3904-smallest-stable-index-ii": {
-    "folder": "3904-smallest-stable-index-ii",
+  "115-distinct-subsequences": {
+    "folder": "115-distinct-subsequences",
     "solutions": {
       "py": {
         "lang_display": "Python3",
         "file": "solution.py",
-        "runtime": "148 ms",
-        "runtime_pct": 79.09200000000011,
-        "memory": "32.7 MB",
-        "memory_pct": 57.27279999999999,
-        "solved_at": "2026-09-05",
-        "submitted": "2026-09-05 13:36 UTC"
+        "runtime": "903 ms",
+        "runtime_pct": 7.6557000000004125,
+        "memory": "232.5 MB",
+        "memory_pct": 15.324900000000119,
+        "solved_at": "2026-09-06",
+        "submitted": "2026-09-06 18:50 UTC"
       }
     },
     "meta": {
-      "frontend_id": "3904",
-      "title": "Smallest Stable Index II",
-      "slug": "smallest-stable-index-ii",
-      "difficulty": "Medium",
+      "frontend_id": "115",
+      "title": "Distinct Subsequences",
+      "slug": "distinct-subsequences",
+      "difficulty": "Hard",
       "tags": [
-        "Array",
-        "Prefix Sum"
+        "String",
+        "Dynamic Programming"
       ],
-      "url": "https://leetcode.com/problems/smallest-stable-index-ii/"
+      "url": "https://leetcode.com/problems/distinct-subsequences/"
     },
-    "statement_md": "You are given an integer array `nums` of length `n` and an integer `k`.\n\n\n\nFor each index `i`, define its **instability score** as `max(nums[0..i]) - min(nums[i..n - 1])`.\n\n\n\nIn other words:\n\n\n - `max(nums[0..i])` is the **largest** value among the elements from index 0 to index `i`.\n - `min(nums[i..n - 1])` is the **smallest** value among the elements from index `i` to index `n - 1`.\n\n\n\nAn index `i` is called **stable** if its instability score is **less than or equal to** `k`.\n\n\n\nReturn the **smallest** stable index. If no such index exists, return -1.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** nums = [5,0,1,4], k = 3\n\n\n\n**Output:** 3\n\n\n\n**Explanation:**\n\n\n - At index 0: The maximum in `[5]` is 5, and the minimum in `[5, 0, 1, 4]` is 0, so the instability score is `5 - 0 = 5`.\n - At index 1: The maximum in `[5, 0]` is 5, and the minimum in `[0, 1, 4]` is 0, so the instability score is `5 - 0 = 5`.\n - At index 2: The maximum in `[5, 0, 1]` is 5, and the minimum in `[1, 4]` is 1, so the instability score is `5 - 1 = 4`.\n - At index 3: The maximum in `[5, 0, 1, 4]` is 5, and the minimum in `[4]` is 4, so the instability score is `5 - 4 = 1`.\n - This is the first index with an instability score less than or equal to `k = 3`. Thus, the answer is 3.\n\n\n\n**Example 2:**\n\n\n\n**Input:** nums = [3,2,1], k = 1\n\n\n\n**Output:** -1\n\n\n\n**Explanation:**\n\n\n - At index 0, the instability score is `3 - 1 = 2`.\n - At index 1, the instability score is `3 - 1 = 2`.\n - At index 2, the instability score is `3 - 1 = 2`.\n - None of these values is less than or equal to `k = 1`, so the answer is -1.\n\n\n\n**Example 3:**\n\n\n\n**Input:** nums = [0], k = 0\n\n\n\n**Output:** 0\n\n\n\n**Explanation:**\n\n\n\nAt index 0, the instability score is `0 - 0 = 0`, which is less than or equal to `k = 0`. Therefore, the answer is 0.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= nums.length <= 105`\n - `0 <= nums[i] <= 109`\n - `0 <= k <= 109`",
-    "frontend_id": "3904",
-    "title": "Smallest Stable Index II",
-    "slug": "smallest-stable-index-ii",
-    "difficulty": "Medium",
+    "statement_md": "Given two strings s and t, return *the number of distinct* ***subsequences****of*s*which equals*t.\n\n\n\nThe test cases are generated so that the answer fits on a 32-bit signed integer.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"rabbbit\", t = \"rabbit\"\nOutput: 3\nExplanation:\nAs shown below, there are 3 ways you can generate \"rabbit\" from s.\nrabbbit\nrabbbit\nrabbbit\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"babgbag\", t = \"bag\"\nOutput: 5\nExplanation:\nAs shown below, there are 5 ways you can generate \"bag\" from s.\nbabgbag\nbabgbag\nbabgbag\nbabgbag\nbabgbag\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length, t.length <= 1000`\n - `s` and `t` consist of English letters.",
+    "frontend_id": "115",
+    "title": "Distinct Subsequences",
+    "slug": "distinct-subsequences",
+    "difficulty": "Hard",
     "lang_display": "Python3",
-    "solved_at": "2026-09-05"
+    "solved_at": "2026-09-06"
   }
 }
