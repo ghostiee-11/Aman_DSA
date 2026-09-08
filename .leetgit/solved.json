@@ -1,4 +1,37 @@
 {
+  "115-distinct-subsequences": {
+    "difficulty": "Hard",
+    "folder": "115-distinct-subsequences",
+    "frontend_id": "115",
+    "lang_display": "Python3",
+    "meta": {
+      "difficulty": "Hard",
+      "frontend_id": "115",
+      "slug": "distinct-subsequences",
+      "tags": [
+        "String",
+        "Dynamic Programming"
+      ],
+      "title": "Distinct Subsequences",
+      "url": "https://leetcode.com/problems/distinct-subsequences/"
+    },
+    "slug": "distinct-subsequences",
+    "solutions": {
+      "py": {
+        "file": "solution.py",
+        "lang_display": "Python3",
+        "memory": "232.5 MB",
+        "memory_pct": 15.324900000000119,
+        "runtime": "903 ms",
+        "runtime_pct": 7.6557000000004125,
+        "solved_at": "2026-09-06",
+        "submitted": "2026-09-06 18:50 UTC"
+      }
+    },
+    "solved_at": "2026-09-06",
+    "statement_md": "Given two strings s and t, return *the number of distinct* ***subsequences****of*s*which equals*t.\n\n\n\nThe test cases are generated so that the answer fits on a 32-bit signed integer.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"rabbbit\", t = \"rabbit\"\nOutput: 3\nExplanation:\nAs shown below, there are 3 ways you can generate \"rabbit\" from s.\nrabbbit\nrabbbit\nrabbbit\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"babgbag\", t = \"bag\"\nOutput: 5\nExplanation:\nAs shown below, there are 5 ways you can generate \"bag\" from s.\nbabgbag\nbabgbag\nbabgbag\nbabgbag\nbabgbag\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length, t.length <= 1000`\n - `s` and `t` consist of English letters.",
+    "title": "Distinct Subsequences"
+  },
   "1189-maximum-number-of-balloons": {
     "difficulty": "Easy",
     "folder": "1189-maximum-number-of-balloons",
@@ -530,37 +563,37 @@
     "statement_md": "Given an integer array `nums`, *find three numbers whose product is maximum and return the maximum product*.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: nums = [1,2,3]\nOutput: 6\n```\n\n**Example 2:**\n\n\n\n```\nInput: nums = [1,2,3,4]\nOutput: 24\n```\n\n**Example 3:**\n\n\n\n```\nInput: nums = [-1,-2,-3]\nOutput: -6\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `3 <= nums.length <= 104`\n - `-1000 <= nums[i] <= 1000`",
     "title": "Maximum Product of Three Numbers"
   },
-  "115-distinct-subsequences": {
-    "folder": "115-distinct-subsequences",
+  "940-distinct-subsequences-ii": {
+    "folder": "940-distinct-subsequences-ii",
     "solutions": {
       "py": {
         "lang_display": "Python3",
         "file": "solution.py",
-        "runtime": "903 ms",
-        "runtime_pct": 7.6557000000004125,
-        "memory": "232.5 MB",
-        "memory_pct": 15.324900000000119,
-        "solved_at": "2026-09-06",
-        "submitted": "2026-09-06 18:50 UTC"
+        "runtime": "94 ms",
+        "runtime_pct": 5.049300000000037,
+        "memory": "19.8 MB",
+        "memory_pct": 8.080800000000002,
+        "solved_at": "2026-09-08",
+        "submitted": "2026-09-08 04:55 UTC"
       }
     },
     "meta": {
-      "frontend_id": "115",
-      "title": "Distinct Subsequences",
-      "slug": "distinct-subsequences",
+      "frontend_id": "940",
+      "title": "Distinct Subsequences II",
+      "slug": "distinct-subsequences-ii",
       "difficulty": "Hard",
       "tags": [
         "String",
         "Dynamic Programming"
       ],
-      "url": "https://leetcode.com/problems/distinct-subsequences/"
+      "url": "https://leetcode.com/problems/distinct-subsequences-ii/"
     },
-    "statement_md": "Given two strings s and t, return *the number of distinct* ***subsequences****of*s*which equals*t.\n\n\n\nThe test cases are generated so that the answer fits on a 32-bit signed integer.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"rabbbit\", t = \"rabbit\"\nOutput: 3\nExplanation:\nAs shown below, there are 3 ways you can generate \"rabbit\" from s.\nrabbbit\nrabbbit\nrabbbit\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"babgbag\", t = \"bag\"\nOutput: 5\nExplanation:\nAs shown below, there are 5 ways you can generate \"bag\" from s.\nbabgbag\nbabgbag\nbabgbag\nbabgbag\nbabgbag\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length, t.length <= 1000`\n - `s` and `t` consist of English letters.",
-    "frontend_id": "115",
-    "title": "Distinct Subsequences",
-    "slug": "distinct-subsequences",
+    "statement_md": "Given a string s, return *the number of **distinct non-empty subsequences** of* `s`. Since the answer may be very large, return it **modulo** `109 + 7`.\n\n A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not.\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"abc\"\nOutput: 7\nExplanation: The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\".\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"aba\"\nOutput: 6\nExplanation: The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\".\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: s = \"aaa\"\nOutput: 3\nExplanation: The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\".\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 2000`\n - `s` consists of lowercase English letters.",
+    "frontend_id": "940",
+    "title": "Distinct Subsequences II",
+    "slug": "distinct-subsequences-ii",
     "difficulty": "Hard",
     "lang_display": "Python3",
-    "solved_at": "2026-09-06"
+    "solved_at": "2026-09-08"
   }
 }
