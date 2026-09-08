@@ -564,35 +564,67 @@
     "title": "Maximum Product of Three Numbers"
   },
   "940-distinct-subsequences-ii": {
+    "difficulty": "Hard",
     "folder": "940-distinct-subsequences-ii",
-    "solutions": {
-      "py": {
-        "lang_display": "Python3",
-        "file": "solution.py",
-        "runtime": "94 ms",
-        "runtime_pct": 5.049300000000037,
-        "memory": "19.8 MB",
-        "memory_pct": 8.080800000000002,
-        "solved_at": "2026-09-08",
-        "submitted": "2026-09-08 04:55 UTC"
-      }
-    },
+    "frontend_id": "940",
+    "lang_display": "Python3",
     "meta": {
-      "frontend_id": "940",
-      "title": "Distinct Subsequences II",
-      "slug": "distinct-subsequences-ii",
       "difficulty": "Hard",
+      "frontend_id": "940",
+      "slug": "distinct-subsequences-ii",
       "tags": [
         "String",
         "Dynamic Programming"
       ],
+      "title": "Distinct Subsequences II",
       "url": "https://leetcode.com/problems/distinct-subsequences-ii/"
     },
-    "statement_md": "Given a string s, return *the number of **distinct non-empty subsequences** of* `s`. Since the answer may be very large, return it **modulo** `109 + 7`.\n\n A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not.\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"abc\"\nOutput: 7\nExplanation: The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\".\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"aba\"\nOutput: 6\nExplanation: The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\".\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: s = \"aaa\"\nOutput: 3\nExplanation: The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\".\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 2000`\n - `s` consists of lowercase English letters.",
-    "frontend_id": "940",
-    "title": "Distinct Subsequences II",
     "slug": "distinct-subsequences-ii",
-    "difficulty": "Hard",
+    "solutions": {
+      "py": {
+        "file": "solution.py",
+        "lang_display": "Python3",
+        "memory": "19.8 MB",
+        "memory_pct": 8.080800000000002,
+        "runtime": "94 ms",
+        "runtime_pct": 5.049300000000037,
+        "solved_at": "2026-09-08",
+        "submitted": "2026-09-08 04:55 UTC"
+      }
+    },
+    "solved_at": "2026-09-08",
+    "statement_md": "Given a string s, return *the number of **distinct non-empty subsequences** of* `s`. Since the answer may be very large, return it **modulo** `109 + 7`.\n\n A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not.\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"abc\"\nOutput: 7\nExplanation: The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\".\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"aba\"\nOutput: 6\nExplanation: The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\".\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: s = \"aaa\"\nOutput: 3\nExplanation: The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\".\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 2000`\n - `s` consists of lowercase English letters.",
+    "title": "Distinct Subsequences II"
+  },
+  "3870-count-commas-in-range": {
+    "folder": "3870-count-commas-in-range",
+    "solutions": {
+      "py": {
+        "lang_display": "Python3",
+        "file": "solution.py",
+        "runtime": "344 ms",
+        "runtime_pct": 12.97559999999999,
+        "memory": "19.3 MB",
+        "memory_pct": 46.532500000000006,
+        "solved_at": "2026-09-08",
+        "submitted": "2026-09-08 05:04 UTC"
+      }
+    },
+    "meta": {
+      "frontend_id": "3870",
+      "title": "Count Commas in Range",
+      "slug": "count-commas-in-range",
+      "difficulty": "Easy",
+      "tags": [
+        "Math"
+      ],
+      "url": "https://leetcode.com/problems/count-commas-in-range/"
+    },
+    "statement_md": "You are given an integer `n`.\n\n\n\nReturn the **total** number of commas used when writing all integers from `[1, n]` (inclusive) in **standard** number formatting.\n\n\n\nIn **standard** formatting:\n\n\n - A comma is inserted after **every three** digits from the right.\n - Numbers with **fewer** than 4 digits contain no commas.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** n = 1002\n\n\n\n**Output:** 3\n\n\n\n**Explanation:**\n\n\n\nThe numbers `\"1,000\"`, `\"1,001\"`, and `\"1,002\"` each contain one comma, giving a total of 3.\n\n\n\n**Example 2:**\n\n\n\n**Input:** n = 998\n\n\n\n**Output:** 0\n\n\n\n**Explanation:**\n\n\n\nAll numbers from 1 to 998 have fewer than four digits. Therefore, no commas are used.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= n <= 105`",
+    "frontend_id": "3870",
+    "title": "Count Commas in Range",
+    "slug": "count-commas-in-range",
+    "difficulty": "Easy",
     "lang_display": "Python3",
     "solved_at": "2026-09-08"
   }

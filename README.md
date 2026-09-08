@@ -2,7 +2,7 @@
 
 Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 
-**Solved: 18** (Easy: 10, Medium: 5, Hard: 3)
+**Solved: 19** (Easy: 11, Medium: 5, Hard: 3)
 
 | # | Title | Difficulty | Language |
 | --- | --- | --- | --- |
@@ -17,6 +17,7 @@ Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 | 3568 | [Minimum Moves to Clean the Classroom](3568-minimum-moves-to-clean-the-classroom/) | Medium | Python3 |
 | 3633 | [Earliest Finish Time for Land and Water Rides I](3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy | C++ |
 | 3838 | [Weighted Word Mapping](3838-weighted-word-mapping/) | Easy | Python3 |
+| 3870 | [Count Commas in Range](3870-count-commas-in-range/) | Easy | Python3 |
 | 3875 | [Construct Uniform Parity Array I](3875-construct-uniform-parity-array-i/) | Easy | Python3 |
 | 3876 | [Construct Uniform Parity Array II](3876-construct-uniform-parity-array-ii/) | Medium | Python3 |
 | 3903 | [Smallest Stable Index I](3903-smallest-stable-index-i/) | Easy | Python3 |
