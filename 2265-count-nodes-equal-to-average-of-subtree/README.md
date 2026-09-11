@@ -61,9 +61,9 @@ Explanation: For the node with value 1: The average of its subtree is 1 / 1 = 1.
 
 ### Python3
 
-- **Runtime:** 54 ms (beats 42.30%)
-- **Memory:** 19.7 MB (beats 33.77%)
-- **Submitted:** 2026-09-11 07:47 UTC
+- **Runtime:** 53 ms (beats 49.54%)
+- **Memory:** 19.6 MB (beats 33.77%)
+- **Submitted:** 2026-09-11 07:49 UTC
 
 See [solution.py](solution.py).
 

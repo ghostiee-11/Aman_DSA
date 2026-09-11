@@ -168,6 +168,40 @@
     "statement_md": "A shop is selling candies at a discount. For **every two** candies sold, the shop gives a **third** candy for **free**.\n\n\n\nThe customer can choose **any** candy to take away for free as long as the cost of the chosen candy is less than or equal to the **minimum** cost of the two candies bought.\n\n\n - For example, if there are `4` candies with costs `1`, `2`, `3`, and `4`, and the customer buys candies with costs `2` and `3`, they can take the candy with cost `1` for free, but not the candy with cost `4`.\n\n\n\nGiven a **0-indexed** integer array `cost`, where `cost[i]` denotes the cost of the `ith` candy, return *the **minimum cost** of buying **all** the candies*.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: cost = [1,2,3]\nOutput: 5\nExplanation: We buy the candies with costs 2 and 3, and take the candy with cost 1 for free.\nThe total cost of buying all candies is 2 + 3 = 5. This is the only way we can buy the candies.\nNote that we cannot buy candies with costs 1 and 3, and then take the candy with cost 2 for free.\nThe cost of the free candy has to be less than or equal to the minimum cost of the purchased candies.\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: cost = [6,5,7,9,2,2]\nOutput: 23\nExplanation: The way in which we can get the minimum cost is described below:\n- Buy candies with costs 9 and 7\n- Take the candy with cost 6 for free\n- We buy candies with costs 5 and 2\n- Take the last remaining candy with cost 2 for free\nHence, the minimum cost to buy all candies is 9 + 7 + 5 + 2 = 23.\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: cost = [5,5]\nOutput: 10\nExplanation: Since there are only 2 candies, we buy both of them. There is not a third candy we can take for free.\nHence, the minimum cost to buy all candies is 5 + 5 = 10.\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= cost.length <= 100`\n - `1 <= cost[i] <= 100`",
     "title": "Minimum Cost of Buying Candies With Discount"
   },
+  "2265-count-nodes-equal-to-average-of-subtree": {
+    "difficulty": "Medium",
+    "folder": "2265-count-nodes-equal-to-average-of-subtree",
+    "frontend_id": "2265",
+    "lang_display": "Python3",
+    "meta": {
+      "frontend_id": "2265",
+      "title": "Count Nodes Equal to Average of Subtree",
+      "slug": "count-nodes-equal-to-average-of-subtree",
+      "difficulty": "Medium",
+      "tags": [
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree"
+      ],
+      "url": "https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/"
+    },
+    "slug": "count-nodes-equal-to-average-of-subtree",
+    "solutions": {
+      "py": {
+        "lang_display": "Python3",
+        "file": "solution.py",
+        "runtime": "53 ms",
+        "runtime_pct": 49.5363,
+        "memory": "19.6 MB",
+        "memory_pct": 33.7661,
+        "solved_at": "2026-09-11",
+        "submitted": "2026-09-11 07:49 UTC"
+      }
+    },
+    "solved_at": "2026-09-11",
+    "statement_md": "Given the `root` of a binary tree, return *the number of nodes where the value of the node is equal to the **average** of the values in its **subtree***.\n\n\n\n**Note:**\n\n\n - The **average** of `n` elements is the **sum** of the `n` elements divided by `n` and **rounded down** to the nearest integer.\n - A **subtree** of `root` is a tree consisting of `root` and all of its descendants.\n\n\n\n\n\n**Example 1:**\n\n ![](https://assets.leetcode.com/uploads/2022/03/15/image-20220315203925-1.png)\n\n```\nInput: root = [4,8,5,0,1,null,6]\nOutput: 5\nExplanation:\nFor the node with value 4: The average of its subtree is (4 + 8 + 5 + 0 + 1 + 6) / 6 = 24 / 6 = 4.\nFor the node with value 5: The average of its subtree is (5 + 6) / 2 = 11 / 2 = 5.\nFor the node with value 0: The average of its subtree is 0 / 1 = 0.\nFor the node with value 1: The average of its subtree is 1 / 1 = 1.\nFor the node with value 6: The average of its subtree is 6 / 1 = 6.\n```\n\n\n\n**Example 2:**\n\n ![](https://assets.leetcode.com/uploads/2022/03/26/image-20220326133920-1.png)\n\n```\nInput: root = [1]\nOutput: 1\nExplanation: For the node with value 1: The average of its subtree is 1 / 1 = 1.\n```\n\n\n\n\n\n**Constraints:**\n\n\n - The number of nodes in the tree is in the range `[1, 1000]`.\n - `0 <= Node.val <= 1000`",
+    "title": "Count Nodes Equal to Average of Subtree"
+  },
   "3536-maximum-product-of-two-digits": {
     "difficulty": "Easy",
     "folder": "3536-maximum-product-of-two-digits",
@@ -627,39 +661,5 @@
     "solved_at": "2026-09-08",
     "statement_md": "Given a string s, return *the number of **distinct non-empty subsequences** of* `s`. Since the answer may be very large, return it **modulo** `109 + 7`.\n\n A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not.\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"abc\"\nOutput: 7\nExplanation: The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\".\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"aba\"\nOutput: 6\nExplanation: The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\".\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: s = \"aaa\"\nOutput: 3\nExplanation: The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\".\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 2000`\n - `s` consists of lowercase English letters.",
     "title": "Distinct Subsequences II"
-  },
-  "2265-count-nodes-equal-to-average-of-subtree": {
-    "folder": "2265-count-nodes-equal-to-average-of-subtree",
-    "solutions": {
-      "py": {
-        "lang_display": "Python3",
-        "file": "solution.py",
-        "runtime": "54 ms",
-        "runtime_pct": 42.3007,
-        "memory": "19.7 MB",
-        "memory_pct": 33.7661,
-        "solved_at": "2026-09-11",
-        "submitted": "2026-09-11 07:47 UTC"
-      }
-    },
-    "meta": {
-      "frontend_id": "2265",
-      "title": "Count Nodes Equal to Average of Subtree",
-      "slug": "count-nodes-equal-to-average-of-subtree",
-      "difficulty": "Medium",
-      "tags": [
-        "Tree",
-        "Depth-First Search",
-        "Binary Tree"
-      ],
-      "url": "https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/"
-    },
-    "statement_md": "Given the `root` of a binary tree, return *the number of nodes where the value of the node is equal to the **average** of the values in its **subtree***.\n\n\n\n**Note:**\n\n\n - The **average** of `n` elements is the **sum** of the `n` elements divided by `n` and **rounded down** to the nearest integer.\n - A **subtree** of `root` is a tree consisting of `root` and all of its descendants.\n\n\n\n\n\n**Example 1:**\n\n ![](https://assets.leetcode.com/uploads/2022/03/15/image-20220315203925-1.png)\n\n```\nInput: root = [4,8,5,0,1,null,6]\nOutput: 5\nExplanation:\nFor the node with value 4: The average of its subtree is (4 + 8 + 5 + 0 + 1 + 6) / 6 = 24 / 6 = 4.\nFor the node with value 5: The average of its subtree is (5 + 6) / 2 = 11 / 2 = 5.\nFor the node with value 0: The average of its subtree is 0 / 1 = 0.\nFor the node with value 1: The average of its subtree is 1 / 1 = 1.\nFor the node with value 6: The average of its subtree is 6 / 1 = 6.\n```\n\n\n\n**Example 2:**\n\n ![](https://assets.leetcode.com/uploads/2022/03/26/image-20220326133920-1.png)\n\n```\nInput: root = [1]\nOutput: 1\nExplanation: For the node with value 1: The average of its subtree is 1 / 1 = 1.\n```\n\n\n\n\n\n**Constraints:**\n\n\n - The number of nodes in the tree is in the range `[1, 1000]`.\n - `0 <= Node.val <= 1000`",
-    "frontend_id": "2265",
-    "title": "Count Nodes Equal to Average of Subtree",
-    "slug": "count-nodes-equal-to-average-of-subtree",
-    "difficulty": "Medium",
-    "lang_display": "Python3",
-    "solved_at": "2026-09-11"
   }
 }
