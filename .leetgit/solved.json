@@ -174,26 +174,26 @@
     "frontend_id": "2265",
     "lang_display": "Python3",
     "meta": {
-      "frontend_id": "2265",
-      "title": "Count Nodes Equal to Average of Subtree",
-      "slug": "count-nodes-equal-to-average-of-subtree",
       "difficulty": "Medium",
+      "frontend_id": "2265",
+      "slug": "count-nodes-equal-to-average-of-subtree",
       "tags": [
         "Tree",
         "Depth-First Search",
         "Binary Tree"
       ],
+      "title": "Count Nodes Equal to Average of Subtree",
       "url": "https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/"
     },
     "slug": "count-nodes-equal-to-average-of-subtree",
     "solutions": {
       "py": {
-        "lang_display": "Python3",
         "file": "solution.py",
-        "runtime": "53 ms",
-        "runtime_pct": 49.5363,
+        "lang_display": "Python3",
         "memory": "19.6 MB",
         "memory_pct": 33.7661,
+        "runtime": "53 ms",
+        "runtime_pct": 49.5363,
         "solved_at": "2026-09-11",
         "submitted": "2026-09-11 07:49 UTC"
       }
@@ -661,5 +661,40 @@
     "solved_at": "2026-09-08",
     "statement_md": "Given a string s, return *the number of **distinct non-empty subsequences** of* `s`. Since the answer may be very large, return it **modulo** `109 + 7`.\n\n A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not.\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"abc\"\nOutput: 7\nExplanation: The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\".\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"aba\"\nOutput: 6\nExplanation: The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\".\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: s = \"aaa\"\nOutput: 3\nExplanation: The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\".\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 2000`\n - `s` consists of lowercase English letters.",
     "title": "Distinct Subsequences II"
+  },
+  "3483-unique-3-digit-even-numbers": {
+    "folder": "3483-unique-3-digit-even-numbers",
+    "solutions": {
+      "py": {
+        "lang_display": "Python3",
+        "file": "solution.py",
+        "runtime": "19 ms",
+        "runtime_pct": 55.38469999999999,
+        "memory": "19.3 MB",
+        "memory_pct": 38.461600000000004,
+        "solved_at": "2026-09-11",
+        "submitted": "2026-09-11 12:43 UTC"
+      }
+    },
+    "meta": {
+      "frontend_id": "3483",
+      "title": "Unique 3-Digit Even Numbers",
+      "slug": "unique-3-digit-even-numbers",
+      "difficulty": "Easy",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Recursion",
+        "Enumeration"
+      ],
+      "url": "https://leetcode.com/problems/unique-3-digit-even-numbers/"
+    },
+    "statement_md": "You are given an array of digits called `digits`. Your task is to determine the number of **distinct** three-digit even numbers that can be formed using these digits.\n\n\n\n**Note**: Each *copy* of a digit can only be used **once per number**, and there may **not** be leading zeros.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** digits = [1,2,3,4]\n\n\n\n**Output:** 12\n\n\n\n**Explanation:** The 12 distinct 3-digit even numbers that can be formed are 124, 132, 134, 142, 214, 234, 312, 314, 324, 342, 412, and 432. Note that 222 cannot be formed because there is only 1 copy of the digit 2.\n\n\n\n**Example 2:**\n\n\n\n**Input:** digits = [0,2,2]\n\n\n\n**Output:** 2\n\n\n\n**Explanation:** The only 3-digit even numbers that can be formed are 202 and 220. Note that the digit 2 can be used twice because it appears twice in the array.\n\n\n\n**Example 3:**\n\n\n\n**Input:** digits = [6,6,6]\n\n\n\n**Output:** 1\n\n\n\n**Explanation:** Only 666 can be formed.\n\n\n\n**Example 4:**\n\n\n\n**Input:** digits = [1,3,5]\n\n\n\n**Output:** 0\n\n\n\n**Explanation:** No even 3-digit numbers can be formed.\n\n\n\n\n\n**Constraints:**\n\n\n - `3 <= digits.length <= 10`\n - `0 <= digits[i] <= 9`",
+    "frontend_id": "3483",
+    "title": "Unique 3-Digit Even Numbers",
+    "slug": "unique-3-digit-even-numbers",
+    "difficulty": "Easy",
+    "lang_display": "Python3",
+    "solved_at": "2026-09-11"
   }
 }
