@@ -2,7 +2,7 @@
 
 Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 
-**Solved: 19** (Easy: 11, Medium: 5, Hard: 3)
+**Solved: 20** (Easy: 11, Medium: 6, Hard: 3)
 
 | # | Title | Difficulty | Language |
 | --- | --- | --- | --- |
@@ -13,6 +13,7 @@ Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 | 1464 | [Maximum Product of Two Elements in an Array](1464-maximum-product-of-two-elements-in-an-array/) | Easy | Python3 |
 | 1979 | [Find Greatest Common Divisor of Array](1979-find-greatest-common-divisor-of-array/) | Easy | Python3 |
 | 2144 | [Minimum Cost of Buying Candies With Discount](2144-minimum-cost-of-buying-candies-with-discount/) | Easy | Python3 |
+| 2265 | [Count Nodes Equal to Average of Subtree](2265-count-nodes-equal-to-average-of-subtree/) | Medium | Python3 |
 | 3536 | [Maximum Product of Two Digits](3536-maximum-product-of-two-digits/) | Easy | Python3 |
 | 3568 | [Minimum Moves to Clean the Classroom](3568-minimum-moves-to-clean-the-classroom/) | Medium | Python3 |
 | 3633 | [Earliest Finish Time for Land and Water Rides I](3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy | C++ |

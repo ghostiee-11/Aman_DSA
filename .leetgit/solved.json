@@ -307,6 +307,38 @@
     "statement_md": "You are given an array of strings `words`, where each string represents a word containing lowercase English letters.\n\n\n\nYou are also given an integer array `weights` of length 26, where `weights[i]` represents the weight of the `ith` lowercase English letter.\n\n\n\nThe **weight** of a word is defined as the **sum** of the weights of its characters.\n\n\n\nFor each word, take its weight modulo 26 and map the result to a lowercase English letter using reverse alphabetical order (`0 -> 'z', 1 -> 'y', ..., 25 -> 'a'`).\n\n\n\nReturn a string formed by concatenating the mapped characters for all words in order.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** words = [\"abcd\",\"def\",\"xyz\"], weights = [5,3,12,14,1,2,3,2,10,6,6,9,7,8,7,10,8,9,6,9,9,8,3,7,7,2]\n\n\n\n**Output:** \"rij\"\n\n\n\n**Explanation:**\n\n\n - The weight of `\"abcd\"` is `5 + 3 + 12 + 14 = 34`. The result modulo 26 is `34 % 26 = 8`, which maps to `'r'`.\n - The weight of `\"def\"` is `14 + 1 + 2 = 17`. The result modulo 26 is `17 % 26 = 17`, which maps to `'i'`.\n - The weight of `\"xyz\"` is `7 + 7 + 2 = 16`. The result modulo 26 is `16 % 26 = 16`, which maps to `'j'`.\n\n\n\nThus, the string formed by concatenating the mapped characters is `\"rij\"`.\n\n\n\n**Example 2:**\n\n\n\n**Input:** words = [\"a\",\"b\",\"c\"], weights = [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]\n\n\n\n**Output:** \"yyy\"\n\n\n\n**Explanation:**\n\n\n\nEach word has weight 1. The result modulo 26 is `1 % 26 = 1`, which maps to `'y'`.\n\n\n\nThus, the string formed by concatenating the mapped characters is `\"yyy\"`.\n\n\n\n**Example 3:**\n\n\n\n**Input:** words = [\"abcd\"], weights = [7,5,3,4,3,5,4,9,4,2,2,7,10,2,5,10,6,1,2,2,4,1,3,4,4,5]\n\n\n\n**Output:** \"g\"\n\n\n\n**Explanation:​​​​​​​**\n\n\n\nThe weight of `\"abcd\"` is `7 + 5 + 3 + 4 = 19`. The result modulo 26 is `19 % 26 = 19`, which maps to `'g'`.\n\n\n\nThus, the string formed by concatenating the mapped characters is `\"g\"`.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= words.length <= 100`\n - `1 <= words[i].length <= 10`\n - `weights.length == 26`\n - `1 <= weights[i] <= 100`\n - `words[i]` consists of lowercase English letters.",
     "title": "Weighted Word Mapping"
   },
+  "3870-count-commas-in-range": {
+    "difficulty": "Easy",
+    "folder": "3870-count-commas-in-range",
+    "frontend_id": "3870",
+    "lang_display": "Python3",
+    "meta": {
+      "difficulty": "Easy",
+      "frontend_id": "3870",
+      "slug": "count-commas-in-range",
+      "tags": [
+        "Math"
+      ],
+      "title": "Count Commas in Range",
+      "url": "https://leetcode.com/problems/count-commas-in-range/"
+    },
+    "slug": "count-commas-in-range",
+    "solutions": {
+      "py": {
+        "file": "solution.py",
+        "lang_display": "Python3",
+        "memory": "19.3 MB",
+        "memory_pct": 46.532500000000006,
+        "runtime": "344 ms",
+        "runtime_pct": 12.97559999999999,
+        "solved_at": "2026-09-08",
+        "submitted": "2026-09-08 05:04 UTC"
+      }
+    },
+    "solved_at": "2026-09-08",
+    "statement_md": "You are given an integer `n`.\n\n\n\nReturn the **total** number of commas used when writing all integers from `[1, n]` (inclusive) in **standard** number formatting.\n\n\n\nIn **standard** formatting:\n\n\n - A comma is inserted after **every three** digits from the right.\n - Numbers with **fewer** than 4 digits contain no commas.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** n = 1002\n\n\n\n**Output:** 3\n\n\n\n**Explanation:**\n\n\n\nThe numbers `\"1,000\"`, `\"1,001\"`, and `\"1,002\"` each contain one comma, giving a total of 3.\n\n\n\n**Example 2:**\n\n\n\n**Input:** n = 998\n\n\n\n**Output:** 0\n\n\n\n**Explanation:**\n\n\n\nAll numbers from 1 to 998 have fewer than four digits. Therefore, no commas are used.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= n <= 105`",
+    "title": "Count Commas in Range"
+  },
   "3875-construct-uniform-parity-array-i": {
     "difficulty": "Easy",
     "folder": "3875-construct-uniform-parity-array-i",
@@ -596,36 +628,38 @@
     "statement_md": "Given a string s, return *the number of **distinct non-empty subsequences** of* `s`. Since the answer may be very large, return it **modulo** `109 + 7`.\n\n A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not.\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"abc\"\nOutput: 7\nExplanation: The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\".\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"aba\"\nOutput: 6\nExplanation: The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\".\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: s = \"aaa\"\nOutput: 3\nExplanation: The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\".\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 2000`\n - `s` consists of lowercase English letters.",
     "title": "Distinct Subsequences II"
   },
-  "3870-count-commas-in-range": {
-    "folder": "3870-count-commas-in-range",
+  "2265-count-nodes-equal-to-average-of-subtree": {
+    "folder": "2265-count-nodes-equal-to-average-of-subtree",
     "solutions": {
       "py": {
         "lang_display": "Python3",
         "file": "solution.py",
-        "runtime": "344 ms",
-        "runtime_pct": 12.97559999999999,
-        "memory": "19.3 MB",
-        "memory_pct": 46.532500000000006,
-        "solved_at": "2026-09-08",
-        "submitted": "2026-09-08 05:04 UTC"
+        "runtime": "54 ms",
+        "runtime_pct": 42.3007,
+        "memory": "19.7 MB",
+        "memory_pct": 33.7661,
+        "solved_at": "2026-09-11",
+        "submitted": "2026-09-11 07:47 UTC"
       }
     },
     "meta": {
-      "frontend_id": "3870",
-      "title": "Count Commas in Range",
-      "slug": "count-commas-in-range",
-      "difficulty": "Easy",
+      "frontend_id": "2265",
+      "title": "Count Nodes Equal to Average of Subtree",
+      "slug": "count-nodes-equal-to-average-of-subtree",
+      "difficulty": "Medium",
       "tags": [
-        "Math"
+        "Tree",
+        "Depth-First Search",
+        "Binary Tree"
       ],
-      "url": "https://leetcode.com/problems/count-commas-in-range/"
+      "url": "https://leetcode.com/problems/count-nodes-equal-to-average-of-subtree/"
     },
-    "statement_md": "You are given an integer `n`.\n\n\n\nReturn the **total** number of commas used when writing all integers from `[1, n]` (inclusive) in **standard** number formatting.\n\n\n\nIn **standard** formatting:\n\n\n - A comma is inserted after **every three** digits from the right.\n - Numbers with **fewer** than 4 digits contain no commas.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** n = 1002\n\n\n\n**Output:** 3\n\n\n\n**Explanation:**\n\n\n\nThe numbers `\"1,000\"`, `\"1,001\"`, and `\"1,002\"` each contain one comma, giving a total of 3.\n\n\n\n**Example 2:**\n\n\n\n**Input:** n = 998\n\n\n\n**Output:** 0\n\n\n\n**Explanation:**\n\n\n\nAll numbers from 1 to 998 have fewer than four digits. Therefore, no commas are used.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= n <= 105`",
-    "frontend_id": "3870",
-    "title": "Count Commas in Range",
-    "slug": "count-commas-in-range",
-    "difficulty": "Easy",
+    "statement_md": "Given the `root` of a binary tree, return *the number of nodes where the value of the node is equal to the **average** of the values in its **subtree***.\n\n\n\n**Note:**\n\n\n - The **average** of `n` elements is the **sum** of the `n` elements divided by `n` and **rounded down** to the nearest integer.\n - A **subtree** of `root` is a tree consisting of `root` and all of its descendants.\n\n\n\n\n\n**Example 1:**\n\n ![](https://assets.leetcode.com/uploads/2022/03/15/image-20220315203925-1.png)\n\n```\nInput: root = [4,8,5,0,1,null,6]\nOutput: 5\nExplanation:\nFor the node with value 4: The average of its subtree is (4 + 8 + 5 + 0 + 1 + 6) / 6 = 24 / 6 = 4.\nFor the node with value 5: The average of its subtree is (5 + 6) / 2 = 11 / 2 = 5.\nFor the node with value 0: The average of its subtree is 0 / 1 = 0.\nFor the node with value 1: The average of its subtree is 1 / 1 = 1.\nFor the node with value 6: The average of its subtree is 6 / 1 = 6.\n```\n\n\n\n**Example 2:**\n\n ![](https://assets.leetcode.com/uploads/2022/03/26/image-20220326133920-1.png)\n\n```\nInput: root = [1]\nOutput: 1\nExplanation: For the node with value 1: The average of its subtree is 1 / 1 = 1.\n```\n\n\n\n\n\n**Constraints:**\n\n\n - The number of nodes in the tree is in the range `[1, 1000]`.\n - `0 <= Node.val <= 1000`",
+    "frontend_id": "2265",
+    "title": "Count Nodes Equal to Average of Subtree",
+    "slug": "count-nodes-equal-to-average-of-subtree",
+    "difficulty": "Medium",
     "lang_display": "Python3",
-    "solved_at": "2026-09-08"
+    "solved_at": "2026-09-11"
   }
 }
