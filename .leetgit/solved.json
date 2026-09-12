@@ -202,6 +202,41 @@
     "statement_md": "Given the `root` of a binary tree, return *the number of nodes where the value of the node is equal to the **average** of the values in its **subtree***.\n\n\n\n**Note:**\n\n\n - The **average** of `n` elements is the **sum** of the `n` elements divided by `n` and **rounded down** to the nearest integer.\n - A **subtree** of `root` is a tree consisting of `root` and all of its descendants.\n\n\n\n\n\n**Example 1:**\n\n ![](https://assets.leetcode.com/uploads/2022/03/15/image-20220315203925-1.png)\n\n```\nInput: root = [4,8,5,0,1,null,6]\nOutput: 5\nExplanation:\nFor the node with value 4: The average of its subtree is (4 + 8 + 5 + 0 + 1 + 6) / 6 = 24 / 6 = 4.\nFor the node with value 5: The average of its subtree is (5 + 6) / 2 = 11 / 2 = 5.\nFor the node with value 0: The average of its subtree is 0 / 1 = 0.\nFor the node with value 1: The average of its subtree is 1 / 1 = 1.\nFor the node with value 6: The average of its subtree is 6 / 1 = 6.\n```\n\n\n\n**Example 2:**\n\n ![](https://assets.leetcode.com/uploads/2022/03/26/image-20220326133920-1.png)\n\n```\nInput: root = [1]\nOutput: 1\nExplanation: For the node with value 1: The average of its subtree is 1 / 1 = 1.\n```\n\n\n\n\n\n**Constraints:**\n\n\n - The number of nodes in the tree is in the range `[1, 1000]`.\n - `0 <= Node.val <= 1000`",
     "title": "Count Nodes Equal to Average of Subtree"
   },
+  "3483-unique-3-digit-even-numbers": {
+    "difficulty": "Easy",
+    "folder": "3483-unique-3-digit-even-numbers",
+    "frontend_id": "3483",
+    "lang_display": "Python3",
+    "meta": {
+      "difficulty": "Easy",
+      "frontend_id": "3483",
+      "slug": "unique-3-digit-even-numbers",
+      "tags": [
+        "Array",
+        "Hash Table",
+        "Recursion",
+        "Enumeration"
+      ],
+      "title": "Unique 3-Digit Even Numbers",
+      "url": "https://leetcode.com/problems/unique-3-digit-even-numbers/"
+    },
+    "slug": "unique-3-digit-even-numbers",
+    "solutions": {
+      "py": {
+        "file": "solution.py",
+        "lang_display": "Python3",
+        "memory": "19.3 MB",
+        "memory_pct": 38.461600000000004,
+        "runtime": "19 ms",
+        "runtime_pct": 55.38469999999999,
+        "solved_at": "2026-09-11",
+        "submitted": "2026-09-11 12:43 UTC"
+      }
+    },
+    "solved_at": "2026-09-11",
+    "statement_md": "You are given an array of digits called `digits`. Your task is to determine the number of **distinct** three-digit even numbers that can be formed using these digits.\n\n\n\n**Note**: Each *copy* of a digit can only be used **once per number**, and there may **not** be leading zeros.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** digits = [1,2,3,4]\n\n\n\n**Output:** 12\n\n\n\n**Explanation:** The 12 distinct 3-digit even numbers that can be formed are 124, 132, 134, 142, 214, 234, 312, 314, 324, 342, 412, and 432. Note that 222 cannot be formed because there is only 1 copy of the digit 2.\n\n\n\n**Example 2:**\n\n\n\n**Input:** digits = [0,2,2]\n\n\n\n**Output:** 2\n\n\n\n**Explanation:** The only 3-digit even numbers that can be formed are 202 and 220. Note that the digit 2 can be used twice because it appears twice in the array.\n\n\n\n**Example 3:**\n\n\n\n**Input:** digits = [6,6,6]\n\n\n\n**Output:** 1\n\n\n\n**Explanation:** Only 666 can be formed.\n\n\n\n**Example 4:**\n\n\n\n**Input:** digits = [1,3,5]\n\n\n\n**Output:** 0\n\n\n\n**Explanation:** No even 3-digit numbers can be formed.\n\n\n\n\n\n**Constraints:**\n\n\n - `3 <= digits.length <= 10`\n - `0 <= digits[i] <= 9`",
+    "title": "Unique 3-Digit Even Numbers"
+  },
   "3536-maximum-product-of-two-digits": {
     "difficulty": "Easy",
     "folder": "3536-maximum-product-of-two-digits",
@@ -662,39 +697,39 @@
     "statement_md": "Given a string s, return *the number of **distinct non-empty subsequences** of* `s`. Since the answer may be very large, return it **modulo** `109 + 7`.\n\n A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not.\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"abc\"\nOutput: 7\nExplanation: The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\".\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"aba\"\nOutput: 6\nExplanation: The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\".\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: s = \"aaa\"\nOutput: 3\nExplanation: The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\".\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 2000`\n - `s` consists of lowercase English letters.",
     "title": "Distinct Subsequences II"
   },
-  "3483-unique-3-digit-even-numbers": {
-    "folder": "3483-unique-3-digit-even-numbers",
+  "3414-maximum-score-of-non-overlapping-intervals": {
+    "folder": "3414-maximum-score-of-non-overlapping-intervals",
     "solutions": {
       "py": {
         "lang_display": "Python3",
         "file": "solution.py",
-        "runtime": "19 ms",
-        "runtime_pct": 55.38469999999999,
-        "memory": "19.3 MB",
-        "memory_pct": 38.461600000000004,
-        "solved_at": "2026-09-11",
-        "submitted": "2026-09-11 12:43 UTC"
+        "runtime": "1458 ms",
+        "runtime_pct": 69.49179999999994,
+        "memory": "82.7 MB",
+        "memory_pct": 44.06829999999998,
+        "solved_at": "2026-09-12",
+        "submitted": "2026-09-12 18:46 UTC"
       }
     },
     "meta": {
-      "frontend_id": "3483",
-      "title": "Unique 3-Digit Even Numbers",
-      "slug": "unique-3-digit-even-numbers",
-      "difficulty": "Easy",
+      "frontend_id": "3414",
+      "title": "Maximum Score of Non-overlapping Intervals",
+      "slug": "maximum-score-of-non-overlapping-intervals",
+      "difficulty": "Hard",
       "tags": [
         "Array",
-        "Hash Table",
-        "Recursion",
-        "Enumeration"
+        "Binary Search",
+        "Dynamic Programming",
+        "Sorting"
       ],
-      "url": "https://leetcode.com/problems/unique-3-digit-even-numbers/"
+      "url": "https://leetcode.com/problems/maximum-score-of-non-overlapping-intervals/"
     },
-    "statement_md": "You are given an array of digits called `digits`. Your task is to determine the number of **distinct** three-digit even numbers that can be formed using these digits.\n\n\n\n**Note**: Each *copy* of a digit can only be used **once per number**, and there may **not** be leading zeros.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** digits = [1,2,3,4]\n\n\n\n**Output:** 12\n\n\n\n**Explanation:** The 12 distinct 3-digit even numbers that can be formed are 124, 132, 134, 142, 214, 234, 312, 314, 324, 342, 412, and 432. Note that 222 cannot be formed because there is only 1 copy of the digit 2.\n\n\n\n**Example 2:**\n\n\n\n**Input:** digits = [0,2,2]\n\n\n\n**Output:** 2\n\n\n\n**Explanation:** The only 3-digit even numbers that can be formed are 202 and 220. Note that the digit 2 can be used twice because it appears twice in the array.\n\n\n\n**Example 3:**\n\n\n\n**Input:** digits = [6,6,6]\n\n\n\n**Output:** 1\n\n\n\n**Explanation:** Only 666 can be formed.\n\n\n\n**Example 4:**\n\n\n\n**Input:** digits = [1,3,5]\n\n\n\n**Output:** 0\n\n\n\n**Explanation:** No even 3-digit numbers can be formed.\n\n\n\n\n\n**Constraints:**\n\n\n - `3 <= digits.length <= 10`\n - `0 <= digits[i] <= 9`",
-    "frontend_id": "3483",
-    "title": "Unique 3-Digit Even Numbers",
-    "slug": "unique-3-digit-even-numbers",
-    "difficulty": "Easy",
+    "statement_md": "You are given a 2D integer array `intervals`, where `intervals[i] = [li, ri, weighti]`. Interval `i` starts at position `li` and ends at `ri`, and has a weight of `weighti`. You can choose *up to* 4 **non-overlapping** intervals. The **score** of the chosen intervals is defined as the total sum of their weights.\n\n\n\nReturn the lexicographically smallest array of at most 4 indices from `intervals` with **maximum** score, representing your choice of non-overlapping intervals.\n\n\n\nTwo intervals are said to be **non-overlapping** if they do not share any points. In particular, intervals sharing a left or right boundary are considered overlapping.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** intervals = [[1,3,2],[4,5,2],[1,5,5],[6,9,3],[6,7,1],[8,9,1]]\n\n\n\n**Output:** [2,3]\n\n\n\n**Explanation:**\n\n\n\nYou can choose the intervals with indices 2, and 3 with respective weights of 5, and 3.\n\n\n\n**Example 2:**\n\n\n\n**Input:** intervals = [[5,8,1],[6,7,7],[4,7,3],[9,10,6],[7,8,2],[11,14,3],[3,5,5]]\n\n\n\n**Output:** [1,3,5,6]\n\n\n\n**Explanation:**\n\n\n\nYou can choose the intervals with indices 1, 3, 5, and 6 with respective weights of 7, 6, 3, and 5.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= intevals.length <= 5 * 104`\n - `intervals[i].length == 3`\n - `intervals[i] = [li, ri, weighti]`\n - `1 <= li <= ri <= 109`\n - `1 <= weighti <= 109`",
+    "frontend_id": "3414",
+    "title": "Maximum Score of Non-overlapping Intervals",
+    "slug": "maximum-score-of-non-overlapping-intervals",
+    "difficulty": "Hard",
     "lang_display": "Python3",
-    "solved_at": "2026-09-11"
+    "solved_at": "2026-09-12"
   }
 }
