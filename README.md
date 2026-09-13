@@ -2,12 +2,13 @@
 
 Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 
-**Solved: 22** (Easy: 12, Medium: 6, Hard: 4)
+**Solved: 23** (Easy: 12, Medium: 7, Hard: 4)
 
 | # | Title | Difficulty | Language |
 | --- | --- | --- | --- |
 | 115 | [Distinct Subsequences](115-distinct-subsequences/) | Hard | Python3 |
 | 628 | [Maximum Product of Three Numbers](628-maximum-product-of-three-numbers/) | Easy | C++ |
+| 835 | [Image Overlap](835-image-overlap/) | Medium | Python3 |
 | 940 | [Distinct Subsequences II](940-distinct-subsequences-ii/) | Hard | Python3 |
 | 1189 | [Maximum Number of Balloons](1189-maximum-number-of-balloons/) | Easy | C++ |
 | 1464 | [Maximum Product of Two Elements in an Array](1464-maximum-product-of-two-elements-in-an-array/) | Easy | Python3 |
