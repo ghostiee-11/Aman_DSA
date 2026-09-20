@@ -699,6 +699,39 @@
     "statement_md": "Given an integer array `nums`, *find three numbers whose product is maximum and return the maximum product*.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: nums = [1,2,3]\nOutput: 6\n```\n\n**Example 2:**\n\n\n\n```\nInput: nums = [1,2,3,4]\nOutput: 24\n```\n\n**Example 3:**\n\n\n\n```\nInput: nums = [-1,-2,-3]\nOutput: -6\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `3 <= nums.length <= 104`\n - `-1000 <= nums[i] <= 1000`",
     "title": "Maximum Product of Three Numbers"
   },
+  "835-image-overlap": {
+    "difficulty": "Medium",
+    "folder": "835-image-overlap",
+    "frontend_id": "835",
+    "lang_display": "Python3",
+    "meta": {
+      "difficulty": "Medium",
+      "frontend_id": "835",
+      "slug": "image-overlap",
+      "tags": [
+        "Array",
+        "Matrix"
+      ],
+      "title": "Image Overlap",
+      "url": "https://leetcode.com/problems/image-overlap/"
+    },
+    "slug": "image-overlap",
+    "solutions": {
+      "py": {
+        "file": "solution.py",
+        "lang_display": "Python3",
+        "memory": "19.8 MB",
+        "memory_pct": 49.99990000000002,
+        "runtime": "296 ms",
+        "runtime_pct": 36.50419999999991,
+        "solved_at": "2026-09-13",
+        "submitted": "2026-09-13 19:28 UTC"
+      }
+    },
+    "solved_at": "2026-09-13",
+    "statement_md": "You are given two images, `img1` and `img2`, represented as binary, square matrices of size `n x n`. A binary matrix has only `0`s and `1`s as values.\n\n\n\nWe **translate** one image however we choose by sliding all the `1` bits left, right, up, and/or down any number of units. We then place it on top of the other image. We can then calculate the **overlap** by counting the number of positions that have a `1` in **both** images.\n\n\n\nNote also that a translation does **not** include any kind of rotation. Any `1` bits that are translated outside of the matrix borders are erased.\n\n\n\nReturn *the largest possible overlap*.\n\n\n\n\n\n**Example 1:**\n\n ![](https://assets.leetcode.com/uploads/2020/09/09/overlap1.jpg)\n\n```\nInput: img1 = [[1,1,0],[0,1,0],[0,1,0]], img2 = [[0,0,0],[0,1,1],[0,0,1]]\nOutput: 3\nExplanation: We translate img1 to right by 1 unit and down by 1 unit.\n\nThe number of positions that have a 1 in both images is 3 (shown in red).\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: img1 = [[1]], img2 = [[1]]\nOutput: 1\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: img1 = [[0]], img2 = [[0]]\nOutput: 0\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `n == img1.length == img1[i].length`\n - `n == img2.length == img2[i].length`\n - `1 <= n <= 30`\n - `img1[i][j]` is either `0` or `1`.\n - `img2[i][j]` is either `0` or `1`.",
+    "title": "Image Overlap"
+  },
   "940-distinct-subsequences-ii": {
     "difficulty": "Hard",
     "folder": "940-distinct-subsequences-ii",
@@ -732,37 +765,37 @@
     "statement_md": "Given a string s, return *the number of **distinct non-empty subsequences** of* `s`. Since the answer may be very large, return it **modulo** `109 + 7`.\n\n A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not.\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"abc\"\nOutput: 7\nExplanation: The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\".\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"aba\"\nOutput: 6\nExplanation: The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\".\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: s = \"aaa\"\nOutput: 3\nExplanation: The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\".\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 2000`\n - `s` consists of lowercase English letters.",
     "title": "Distinct Subsequences II"
   },
-  "835-image-overlap": {
-    "folder": "835-image-overlap",
+  "3498-reverse-degree-of-a-string": {
+    "folder": "3498-reverse-degree-of-a-string",
     "solutions": {
       "py": {
         "lang_display": "Python3",
         "file": "solution.py",
-        "runtime": "296 ms",
-        "runtime_pct": 36.50419999999991,
-        "memory": "19.8 MB",
-        "memory_pct": 49.99990000000002,
-        "solved_at": "2026-09-13",
-        "submitted": "2026-09-13 19:28 UTC"
+        "runtime": "3 ms",
+        "runtime_pct": 97.6522,
+        "memory": "19.3 MB",
+        "memory_pct": 55.5651,
+        "solved_at": "2026-09-20",
+        "submitted": "2026-09-20 04:59 UTC"
       }
     },
     "meta": {
-      "frontend_id": "835",
-      "title": "Image Overlap",
-      "slug": "image-overlap",
-      "difficulty": "Medium",
+      "frontend_id": "3498",
+      "title": "Reverse Degree of a String",
+      "slug": "reverse-degree-of-a-string",
+      "difficulty": "Easy",
       "tags": [
-        "Array",
-        "Matrix"
+        "String",
+        "Simulation"
       ],
-      "url": "https://leetcode.com/problems/image-overlap/"
+      "url": "https://leetcode.com/problems/reverse-degree-of-a-string/"
     },
-    "statement_md": "You are given two images, `img1` and `img2`, represented as binary, square matrices of size `n x n`. A binary matrix has only `0`s and `1`s as values.\n\n\n\nWe **translate** one image however we choose by sliding all the `1` bits left, right, up, and/or down any number of units. We then place it on top of the other image. We can then calculate the **overlap** by counting the number of positions that have a `1` in **both** images.\n\n\n\nNote also that a translation does **not** include any kind of rotation. Any `1` bits that are translated outside of the matrix borders are erased.\n\n\n\nReturn *the largest possible overlap*.\n\n\n\n\n\n**Example 1:**\n\n ![](https://assets.leetcode.com/uploads/2020/09/09/overlap1.jpg)\n\n```\nInput: img1 = [[1,1,0],[0,1,0],[0,1,0]], img2 = [[0,0,0],[0,1,1],[0,0,1]]\nOutput: 3\nExplanation: We translate img1 to right by 1 unit and down by 1 unit.\n\nThe number of positions that have a 1 in both images is 3 (shown in red).\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: img1 = [[1]], img2 = [[1]]\nOutput: 1\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: img1 = [[0]], img2 = [[0]]\nOutput: 0\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `n == img1.length == img1[i].length`\n - `n == img2.length == img2[i].length`\n - `1 <= n <= 30`\n - `img1[i][j]` is either `0` or `1`.\n - `img2[i][j]` is either `0` or `1`.",
-    "frontend_id": "835",
-    "title": "Image Overlap",
-    "slug": "image-overlap",
-    "difficulty": "Medium",
+    "statement_md": "Given a string `s`, calculate its **reverse degree**.\n\n\n\nThe **reverse degree** is calculated as follows:\n\n\n - For each character, multiply its position in the *reversed* alphabet (`'a'` = 26, `'b'` = 25, ..., `'z'` = 1) with its position in the string **(1-indexed)**.\n - Sum these products for all characters in the string.\n\n\n\nReturn the **reverse degree** of `s`.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** s = \"abc\"\n\n\n\n**Output:** 148\n\n\n\n**Explanation:**\n\n    Letter Index in Reversed Alphabet Index in String Product   `'a'` 26 1 26   `'b'` 25 2 50   `'c'` 24 3 72\n\nThe reversed degree is `26 + 50 + 72 = 148`.\n\n\n\n**Example 2:**\n\n\n\n**Input:** s = \"zaza\"\n\n\n\n**Output:** 160\n\n\n\n**Explanation:**\n\n    Letter Index in Reversed Alphabet Index in String Product   `'z'` 1 1 1   `'a'` 26 2 52   `'z'` 1 3 3   `'a'` 26 4 104\n\nThe reverse degree is `1 + 52 + 3 + 104 = 160`.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 1000`\n - `s` contains only lowercase English letters.",
+    "frontend_id": "3498",
+    "title": "Reverse Degree of a String",
+    "slug": "reverse-degree-of-a-string",
+    "difficulty": "Easy",
     "lang_display": "Python3",
-    "solved_at": "2026-09-13"
+    "solved_at": "2026-09-20"
   }
 }

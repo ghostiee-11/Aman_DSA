@@ -2,7 +2,7 @@
 
 Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 
-**Solved: 23** (Easy: 12, Medium: 7, Hard: 4)
+**Solved: 24** (Easy: 13, Medium: 7, Hard: 4)
 
 | # | Title | Difficulty | Language |
 | --- | --- | --- | --- |
@@ -17,6 +17,7 @@ Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 | 2265 | [Count Nodes Equal to Average of Subtree](2265-count-nodes-equal-to-average-of-subtree/) | Medium | Python3 |
 | 3414 | [Maximum Score of Non-overlapping Intervals](3414-maximum-score-of-non-overlapping-intervals/) | Hard | Python3 |
 | 3483 | [Unique 3-Digit Even Numbers](3483-unique-3-digit-even-numbers/) | Easy | Python3 |
+| 3498 | [Reverse Degree of a String](3498-reverse-degree-of-a-string/) | Easy | Python3 |
 | 3536 | [Maximum Product of Two Digits](3536-maximum-product-of-two-digits/) | Easy | Python3 |
 | 3568 | [Minimum Moves to Clean the Classroom](3568-minimum-moves-to-clean-the-classroom/) | Medium | Python3 |
 | 3633 | [Earliest Finish Time for Land and Water Rides I](3633-earliest-finish-time-for-land-and-water-rides-i/) | Easy | C++ |
