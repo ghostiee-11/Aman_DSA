@@ -2,10 +2,11 @@
 
 Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 
-**Solved: 24** (Easy: 13, Medium: 7, Hard: 4)
+**Solved: 25** (Easy: 13, Medium: 8, Hard: 4)
 
 | # | Title | Difficulty | Language |
 | --- | --- | --- | --- |
+| 7 | [Reverse Integer](7-reverse-integer/) | Medium | Python3 |
 | 115 | [Distinct Subsequences](115-distinct-subsequences/) | Hard | Python3 |
 | 628 | [Maximum Product of Three Numbers](628-maximum-product-of-three-numbers/) | Easy | C++ |
 | 835 | [Image Overlap](835-image-overlap/) | Medium | Python3 |

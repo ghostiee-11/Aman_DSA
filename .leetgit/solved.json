@@ -272,6 +272,39 @@
     "statement_md": "You are given an array of digits called `digits`. Your task is to determine the number of **distinct** three-digit even numbers that can be formed using these digits.\n\n\n\n**Note**: Each *copy* of a digit can only be used **once per number**, and there may **not** be leading zeros.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** digits = [1,2,3,4]\n\n\n\n**Output:** 12\n\n\n\n**Explanation:** The 12 distinct 3-digit even numbers that can be formed are 124, 132, 134, 142, 214, 234, 312, 314, 324, 342, 412, and 432. Note that 222 cannot be formed because there is only 1 copy of the digit 2.\n\n\n\n**Example 2:**\n\n\n\n**Input:** digits = [0,2,2]\n\n\n\n**Output:** 2\n\n\n\n**Explanation:** The only 3-digit even numbers that can be formed are 202 and 220. Note that the digit 2 can be used twice because it appears twice in the array.\n\n\n\n**Example 3:**\n\n\n\n**Input:** digits = [6,6,6]\n\n\n\n**Output:** 1\n\n\n\n**Explanation:** Only 666 can be formed.\n\n\n\n**Example 4:**\n\n\n\n**Input:** digits = [1,3,5]\n\n\n\n**Output:** 0\n\n\n\n**Explanation:** No even 3-digit numbers can be formed.\n\n\n\n\n\n**Constraints:**\n\n\n - `3 <= digits.length <= 10`\n - `0 <= digits[i] <= 9`",
     "title": "Unique 3-Digit Even Numbers"
   },
+  "3498-reverse-degree-of-a-string": {
+    "difficulty": "Easy",
+    "folder": "3498-reverse-degree-of-a-string",
+    "frontend_id": "3498",
+    "lang_display": "Python3",
+    "meta": {
+      "difficulty": "Easy",
+      "frontend_id": "3498",
+      "slug": "reverse-degree-of-a-string",
+      "tags": [
+        "String",
+        "Simulation"
+      ],
+      "title": "Reverse Degree of a String",
+      "url": "https://leetcode.com/problems/reverse-degree-of-a-string/"
+    },
+    "slug": "reverse-degree-of-a-string",
+    "solutions": {
+      "py": {
+        "file": "solution.py",
+        "lang_display": "Python3",
+        "memory": "19.3 MB",
+        "memory_pct": 55.5651,
+        "runtime": "3 ms",
+        "runtime_pct": 97.6522,
+        "solved_at": "2026-09-20",
+        "submitted": "2026-09-20 04:59 UTC"
+      }
+    },
+    "solved_at": "2026-09-20",
+    "statement_md": "Given a string `s`, calculate its **reverse degree**.\n\n\n\nThe **reverse degree** is calculated as follows:\n\n\n - For each character, multiply its position in the *reversed* alphabet (`'a'` = 26, `'b'` = 25, ..., `'z'` = 1) with its position in the string **(1-indexed)**.\n - Sum these products for all characters in the string.\n\n\n\nReturn the **reverse degree** of `s`.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** s = \"abc\"\n\n\n\n**Output:** 148\n\n\n\n**Explanation:**\n\n    Letter Index in Reversed Alphabet Index in String Product   `'a'` 26 1 26   `'b'` 25 2 50   `'c'` 24 3 72\n\nThe reversed degree is `26 + 50 + 72 = 148`.\n\n\n\n**Example 2:**\n\n\n\n**Input:** s = \"zaza\"\n\n\n\n**Output:** 160\n\n\n\n**Explanation:**\n\n    Letter Index in Reversed Alphabet Index in String Product   `'z'` 1 1 1   `'a'` 26 2 52   `'z'` 1 3 3   `'a'` 26 4 104\n\nThe reverse degree is `1 + 52 + 3 + 104 = 160`.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 1000`\n - `s` contains only lowercase English letters.",
+    "title": "Reverse Degree of a String"
+  },
   "3536-maximum-product-of-two-digits": {
     "difficulty": "Easy",
     "folder": "3536-maximum-product-of-two-digits",
@@ -765,37 +798,36 @@
     "statement_md": "Given a string s, return *the number of **distinct non-empty subsequences** of* `s`. Since the answer may be very large, return it **modulo** `109 + 7`.\n\n A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not.\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"abc\"\nOutput: 7\nExplanation: The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\".\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"aba\"\nOutput: 6\nExplanation: The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\".\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: s = \"aaa\"\nOutput: 3\nExplanation: The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\".\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 2000`\n - `s` consists of lowercase English letters.",
     "title": "Distinct Subsequences II"
   },
-  "3498-reverse-degree-of-a-string": {
-    "folder": "3498-reverse-degree-of-a-string",
+  "7-reverse-integer": {
+    "folder": "7-reverse-integer",
     "solutions": {
       "py": {
         "lang_display": "Python3",
         "file": "solution.py",
-        "runtime": "3 ms",
-        "runtime_pct": 97.6522,
+        "runtime": "0 ms",
+        "runtime_pct": 100,
         "memory": "19.3 MB",
-        "memory_pct": 55.5651,
-        "solved_at": "2026-09-20",
-        "submitted": "2026-09-20 04:59 UTC"
+        "memory_pct": 44.617500000000014,
+        "solved_at": "2026-10-10",
+        "submitted": "2026-10-10 20:46 UTC"
       }
     },
     "meta": {
-      "frontend_id": "3498",
-      "title": "Reverse Degree of a String",
-      "slug": "reverse-degree-of-a-string",
-      "difficulty": "Easy",
+      "frontend_id": "7",
+      "title": "Reverse Integer",
+      "slug": "reverse-integer",
+      "difficulty": "Medium",
       "tags": [
-        "String",
-        "Simulation"
+        "Math"
       ],
-      "url": "https://leetcode.com/problems/reverse-degree-of-a-string/"
+      "url": "https://leetcode.com/problems/reverse-integer/"
     },
-    "statement_md": "Given a string `s`, calculate its **reverse degree**.\n\n\n\nThe **reverse degree** is calculated as follows:\n\n\n - For each character, multiply its position in the *reversed* alphabet (`'a'` = 26, `'b'` = 25, ..., `'z'` = 1) with its position in the string **(1-indexed)**.\n - Sum these products for all characters in the string.\n\n\n\nReturn the **reverse degree** of `s`.\n\n\n\n\n\n**Example 1:**\n\n\n\n**Input:** s = \"abc\"\n\n\n\n**Output:** 148\n\n\n\n**Explanation:**\n\n    Letter Index in Reversed Alphabet Index in String Product   `'a'` 26 1 26   `'b'` 25 2 50   `'c'` 24 3 72\n\nThe reversed degree is `26 + 50 + 72 = 148`.\n\n\n\n**Example 2:**\n\n\n\n**Input:** s = \"zaza\"\n\n\n\n**Output:** 160\n\n\n\n**Explanation:**\n\n    Letter Index in Reversed Alphabet Index in String Product   `'z'` 1 1 1   `'a'` 26 2 52   `'z'` 1 3 3   `'a'` 26 4 104\n\nThe reverse degree is `1 + 52 + 3 + 104 = 160`.\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 1000`\n - `s` contains only lowercase English letters.",
-    "frontend_id": "3498",
-    "title": "Reverse Degree of a String",
-    "slug": "reverse-degree-of-a-string",
-    "difficulty": "Easy",
+    "statement_md": "Given a signed 32-bit integer `x`, return `x`*with its digits reversed*. If reversing `x` causes the value to go outside the signed 32-bit integer range `[-231, 231 - 1]`, then return `0`.\n\n\n\n**Assume the environment does not allow you to store 64-bit integers (signed or unsigned).**\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: x = 123\nOutput: 321\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: x = -123\nOutput: -321\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: x = 120\nOutput: 21\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `-231 <= x <= 231 - 1`",
+    "frontend_id": "7",
+    "title": "Reverse Integer",
+    "slug": "reverse-integer",
+    "difficulty": "Medium",
     "lang_display": "Python3",
-    "solved_at": "2026-09-20"
+    "solved_at": "2026-10-10"
   }
 }
