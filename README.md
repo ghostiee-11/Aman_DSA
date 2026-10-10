@@ -2,7 +2,7 @@
 
 Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 
-**Solved: 26** (Easy: 14, Medium: 8, Hard: 4)
+**Solved: 27** (Easy: 15, Medium: 8, Hard: 4)
 
 | # | Title | Difficulty | Language |
 | --- | --- | --- | --- |
@@ -17,6 +17,7 @@ Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 | 1979 | [Find Greatest Common Divisor of Array](1979-find-greatest-common-divisor-of-array/) | Easy | Python3 |
 | 2144 | [Minimum Cost of Buying Candies With Discount](2144-minimum-cost-of-buying-candies-with-discount/) | Easy | Python3 |
 | 2265 | [Count Nodes Equal to Average of Subtree](2265-count-nodes-equal-to-average-of-subtree/) | Medium | Python3 |
+| 2520 | [Count the Digits That Divide a Number](2520-count-the-digits-that-divide-a-number/) | Easy | Python3 |
 | 3414 | [Maximum Score of Non-overlapping Intervals](3414-maximum-score-of-non-overlapping-intervals/) | Hard | Python3 |
 | 3483 | [Unique 3-Digit Even Numbers](3483-unique-3-digit-even-numbers/) | Easy | Python3 |
 | 3498 | [Reverse Degree of a String](3498-reverse-degree-of-a-string/) | Easy | Python3 |

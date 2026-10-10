@@ -66,6 +66,39 @@
     "statement_md": "Given a string `text`, you want to use the characters of `text` to form as many instances of the word **\"balloon\"** as possible.\n\n\n\nYou can use each character in `text` **at most once**. Return the maximum number of instances that can be formed.\n\n\n\n\n\n**Example 1:**\n\n\n\n**![](https://assets.leetcode.com/uploads/2019/09/05/1536_ex1_upd.JPG)**\n\n\n\n```\nInput: text = \"nlaebolko\"\nOutput: 1\n```\n\n\n\n**Example 2:**\n\n\n\n**![](https://assets.leetcode.com/uploads/2019/09/05/1536_ex2_upd.JPG)**\n\n\n\n```\nInput: text = \"loonbalxballpoon\"\nOutput: 2\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: text = \"leetcode\"\nOutput: 0\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= text.length <= 104`\n - `text` consists of lower case English letters only.\n\n\n\n\n\n**Note:** This question is the same as [2287: Rearrange Characters to Make Target String.](https://leetcode.com/problems/rearrange-characters-to-make-target-string/description/)",
     "title": "Maximum Number of Balloons"
   },
+  "125-valid-palindrome": {
+    "difficulty": "Easy",
+    "folder": "125-valid-palindrome",
+    "frontend_id": "125",
+    "lang_display": "Python3",
+    "meta": {
+      "difficulty": "Easy",
+      "frontend_id": "125",
+      "slug": "valid-palindrome",
+      "tags": [
+        "Two Pointers",
+        "String"
+      ],
+      "title": "Valid Palindrome",
+      "url": "https://leetcode.com/problems/valid-palindrome/"
+    },
+    "slug": "valid-palindrome",
+    "solutions": {
+      "py": {
+        "file": "solution.py",
+        "lang_display": "Python3",
+        "memory": "23.3 MB",
+        "memory_pct": 15.909099999999977,
+        "runtime": "6 ms",
+        "runtime_pct": 84.7244,
+        "solved_at": "2026-10-10",
+        "submitted": "2026-10-10 21:10 UTC"
+      }
+    },
+    "solved_at": "2026-10-10",
+    "statement_md": "A phrase is a **palindrome** if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.\n\n\n\nGiven a string `s`, return `true`*if it is a **palindrome**, or*`false`*otherwise*.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"A man, a plan, a canal: Panama\"\nOutput: true\nExplanation: \"amanaplanacanalpanama\" is a palindrome.\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"race a car\"\nOutput: false\nExplanation: \"raceacar\" is not a palindrome.\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: s = \" \"\nOutput: true\nExplanation: s is an empty string \"\" after removing non-alphanumeric characters.\nSince an empty string reads the same forward and backward, it is a palindrome.\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 2 * 105`\n - `s` consists only of printable ASCII characters.",
+    "title": "Valid Palindrome"
+  },
   "1464-maximum-product-of-two-elements-in-an-array": {
     "difficulty": "Easy",
     "folder": "1464-maximum-product-of-two-elements-in-an-array",
@@ -830,35 +863,34 @@
     "statement_md": "Given a string s, return *the number of **distinct non-empty subsequences** of* `s`. Since the answer may be very large, return it **modulo** `109 + 7`.\n\n A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not.\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"abc\"\nOutput: 7\nExplanation: The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\".\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"aba\"\nOutput: 6\nExplanation: The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\".\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: s = \"aaa\"\nOutput: 3\nExplanation: The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\".\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 2000`\n - `s` consists of lowercase English letters.",
     "title": "Distinct Subsequences II"
   },
-  "125-valid-palindrome": {
-    "folder": "125-valid-palindrome",
+  "2520-count-the-digits-that-divide-a-number": {
+    "folder": "2520-count-the-digits-that-divide-a-number",
     "solutions": {
       "py": {
         "lang_display": "Python3",
         "file": "solution.py",
-        "runtime": "6 ms",
-        "runtime_pct": 84.7244,
-        "memory": "23.3 MB",
-        "memory_pct": 15.909099999999977,
+        "runtime": "4 ms",
+        "runtime_pct": 0.5131000000000041,
+        "memory": "19.3 MB",
+        "memory_pct": 21.32499999999999,
         "solved_at": "2026-10-10",
-        "submitted": "2026-10-10 21:10 UTC"
+        "submitted": "2026-10-10 21:23 UTC"
       }
     },
     "meta": {
-      "frontend_id": "125",
-      "title": "Valid Palindrome",
-      "slug": "valid-palindrome",
+      "frontend_id": "2520",
+      "title": "Count the Digits That Divide a Number",
+      "slug": "count-the-digits-that-divide-a-number",
       "difficulty": "Easy",
       "tags": [
-        "Two Pointers",
-        "String"
+        "Math"
       ],
-      "url": "https://leetcode.com/problems/valid-palindrome/"
+      "url": "https://leetcode.com/problems/count-the-digits-that-divide-a-number/"
     },
-    "statement_md": "A phrase is a **palindrome** if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.\n\n\n\nGiven a string `s`, return `true`*if it is a **palindrome**, or*`false`*otherwise*.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"A man, a plan, a canal: Panama\"\nOutput: true\nExplanation: \"amanaplanacanalpanama\" is a palindrome.\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"race a car\"\nOutput: false\nExplanation: \"raceacar\" is not a palindrome.\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: s = \" \"\nOutput: true\nExplanation: s is an empty string \"\" after removing non-alphanumeric characters.\nSince an empty string reads the same forward and backward, it is a palindrome.\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 2 * 105`\n - `s` consists only of printable ASCII characters.",
-    "frontend_id": "125",
-    "title": "Valid Palindrome",
-    "slug": "valid-palindrome",
+    "statement_md": "Given an integer `num`, return *the number of digits in `num` that divide*`num`.\n\n\n\nAn integer `val` divides `nums` if `nums % val == 0`.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: num = 7\nOutput: 1\nExplanation: 7 divides itself, hence the answer is 1.\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: num = 121\nOutput: 2\nExplanation: 121 is divisible by 1, but not 2. Since 1 occurs twice as a digit, we return 2.\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: num = 1248\nOutput: 4\nExplanation: 1248 is divisible by all of its digits, hence the answer is 4.\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= num <= 109`\n - `num` does not contain `0` as one of its digits.",
+    "frontend_id": "2520",
+    "title": "Count the Digits That Divide a Number",
+    "slug": "count-the-digits-that-divide-a-number",
     "difficulty": "Easy",
     "lang_display": "Python3",
     "solved_at": "2026-10-10"
