@@ -1,11 +1,9 @@
 class Solution:
     def countDigits(self, num: int) -> int:
-        count = 0 
+        count = 0
 
-        for digit in str(num):
-            if num % int(digit) == 0 :
+        for d in str(num):
+            if num % int(d) == 0 :
                 count += 1
-
-        return count
-
+        return count 
         

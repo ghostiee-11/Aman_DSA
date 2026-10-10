@@ -64,9 +64,9 @@ Explanation: 1248 is divisible by all of its digits, hence the answer is 4.
 
 ### Python3
 
-- **Runtime:** 4 ms (beats 0.51%)
-- **Memory:** 19.3 MB (beats 21.32%)
-- **Submitted:** 2026-10-10 21:23 UTC
+- **Runtime:** 0 ms (beats 100.00%)
+- **Memory:** 19.2 MB (beats 60.21%)
+- **Submitted:** 2026-10-10 21:28 UTC
 
 See [solution.py](solution.py).
 

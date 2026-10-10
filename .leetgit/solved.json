@@ -235,6 +235,38 @@
     "statement_md": "Given the `root` of a binary tree, return *the number of nodes where the value of the node is equal to the **average** of the values in its **subtree***.\n\n\n\n**Note:**\n\n\n - The **average** of `n` elements is the **sum** of the `n` elements divided by `n` and **rounded down** to the nearest integer.\n - A **subtree** of `root` is a tree consisting of `root` and all of its descendants.\n\n\n\n\n\n**Example 1:**\n\n ![](https://assets.leetcode.com/uploads/2022/03/15/image-20220315203925-1.png)\n\n```\nInput: root = [4,8,5,0,1,null,6]\nOutput: 5\nExplanation:\nFor the node with value 4: The average of its subtree is (4 + 8 + 5 + 0 + 1 + 6) / 6 = 24 / 6 = 4.\nFor the node with value 5: The average of its subtree is (5 + 6) / 2 = 11 / 2 = 5.\nFor the node with value 0: The average of its subtree is 0 / 1 = 0.\nFor the node with value 1: The average of its subtree is 1 / 1 = 1.\nFor the node with value 6: The average of its subtree is 6 / 1 = 6.\n```\n\n\n\n**Example 2:**\n\n ![](https://assets.leetcode.com/uploads/2022/03/26/image-20220326133920-1.png)\n\n```\nInput: root = [1]\nOutput: 1\nExplanation: For the node with value 1: The average of its subtree is 1 / 1 = 1.\n```\n\n\n\n\n\n**Constraints:**\n\n\n - The number of nodes in the tree is in the range `[1, 1000]`.\n - `0 <= Node.val <= 1000`",
     "title": "Count Nodes Equal to Average of Subtree"
   },
+  "2520-count-the-digits-that-divide-a-number": {
+    "difficulty": "Easy",
+    "folder": "2520-count-the-digits-that-divide-a-number",
+    "frontend_id": "2520",
+    "lang_display": "Python3",
+    "meta": {
+      "frontend_id": "2520",
+      "title": "Count the Digits That Divide a Number",
+      "slug": "count-the-digits-that-divide-a-number",
+      "difficulty": "Easy",
+      "tags": [
+        "Math"
+      ],
+      "url": "https://leetcode.com/problems/count-the-digits-that-divide-a-number/"
+    },
+    "slug": "count-the-digits-that-divide-a-number",
+    "solutions": {
+      "py": {
+        "lang_display": "Python3",
+        "file": "solution.py",
+        "runtime": "0 ms",
+        "runtime_pct": 100,
+        "memory": "19.2 MB",
+        "memory_pct": 60.20519999999999,
+        "solved_at": "2026-10-10",
+        "submitted": "2026-10-10 21:28 UTC"
+      }
+    },
+    "solved_at": "2026-10-10",
+    "statement_md": "Given an integer `num`, return *the number of digits in `num` that divide*`num`.\n\n\n\nAn integer `val` divides `nums` if `nums % val == 0`.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: num = 7\nOutput: 1\nExplanation: 7 divides itself, hence the answer is 1.\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: num = 121\nOutput: 2\nExplanation: 121 is divisible by 1, but not 2. Since 1 occurs twice as a digit, we return 2.\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: num = 1248\nOutput: 4\nExplanation: 1248 is divisible by all of its digits, hence the answer is 4.\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= num <= 109`\n - `num` does not contain `0` as one of its digits.",
+    "title": "Count the Digits That Divide a Number"
+  },
   "3414-maximum-score-of-non-overlapping-intervals": {
     "difficulty": "Hard",
     "folder": "3414-maximum-score-of-non-overlapping-intervals",
@@ -862,37 +894,5 @@
     "solved_at": "2026-09-08",
     "statement_md": "Given a string s, return *the number of **distinct non-empty subsequences** of* `s`. Since the answer may be very large, return it **modulo** `109 + 7`.\n\n A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not.\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"abc\"\nOutput: 7\nExplanation: The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\".\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"aba\"\nOutput: 6\nExplanation: The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\".\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: s = \"aaa\"\nOutput: 3\nExplanation: The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\".\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 2000`\n - `s` consists of lowercase English letters.",
     "title": "Distinct Subsequences II"
-  },
-  "2520-count-the-digits-that-divide-a-number": {
-    "folder": "2520-count-the-digits-that-divide-a-number",
-    "solutions": {
-      "py": {
-        "lang_display": "Python3",
-        "file": "solution.py",
-        "runtime": "4 ms",
-        "runtime_pct": 0.5131000000000041,
-        "memory": "19.3 MB",
-        "memory_pct": 21.32499999999999,
-        "solved_at": "2026-10-10",
-        "submitted": "2026-10-10 21:23 UTC"
-      }
-    },
-    "meta": {
-      "frontend_id": "2520",
-      "title": "Count the Digits That Divide a Number",
-      "slug": "count-the-digits-that-divide-a-number",
-      "difficulty": "Easy",
-      "tags": [
-        "Math"
-      ],
-      "url": "https://leetcode.com/problems/count-the-digits-that-divide-a-number/"
-    },
-    "statement_md": "Given an integer `num`, return *the number of digits in `num` that divide*`num`.\n\n\n\nAn integer `val` divides `nums` if `nums % val == 0`.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: num = 7\nOutput: 1\nExplanation: 7 divides itself, hence the answer is 1.\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: num = 121\nOutput: 2\nExplanation: 121 is divisible by 1, but not 2. Since 1 occurs twice as a digit, we return 2.\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: num = 1248\nOutput: 4\nExplanation: 1248 is divisible by all of its digits, hence the answer is 4.\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= num <= 109`\n - `num` does not contain `0` as one of its digits.",
-    "frontend_id": "2520",
-    "title": "Count the Digits That Divide a Number",
-    "slug": "count-the-digits-that-divide-a-number",
-    "difficulty": "Easy",
-    "lang_display": "Python3",
-    "solved_at": "2026-10-10"
   }
 }
