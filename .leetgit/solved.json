@@ -732,6 +732,38 @@
     "statement_md": "Given an integer array `nums`, *find three numbers whose product is maximum and return the maximum product*.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: nums = [1,2,3]\nOutput: 6\n```\n\n**Example 2:**\n\n\n\n```\nInput: nums = [1,2,3,4]\nOutput: 24\n```\n\n**Example 3:**\n\n\n\n```\nInput: nums = [-1,-2,-3]\nOutput: -6\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `3 <= nums.length <= 104`\n - `-1000 <= nums[i] <= 1000`",
     "title": "Maximum Product of Three Numbers"
   },
+  "7-reverse-integer": {
+    "difficulty": "Medium",
+    "folder": "7-reverse-integer",
+    "frontend_id": "7",
+    "lang_display": "Python3",
+    "meta": {
+      "difficulty": "Medium",
+      "frontend_id": "7",
+      "slug": "reverse-integer",
+      "tags": [
+        "Math"
+      ],
+      "title": "Reverse Integer",
+      "url": "https://leetcode.com/problems/reverse-integer/"
+    },
+    "slug": "reverse-integer",
+    "solutions": {
+      "py": {
+        "file": "solution.py",
+        "lang_display": "Python3",
+        "memory": "19.3 MB",
+        "memory_pct": 44.617500000000014,
+        "runtime": "0 ms",
+        "runtime_pct": 100,
+        "solved_at": "2026-10-10",
+        "submitted": "2026-10-10 20:46 UTC"
+      }
+    },
+    "solved_at": "2026-10-10",
+    "statement_md": "Given a signed 32-bit integer `x`, return `x`*with its digits reversed*. If reversing `x` causes the value to go outside the signed 32-bit integer range `[-231, 231 - 1]`, then return `0`.\n\n\n\n**Assume the environment does not allow you to store 64-bit integers (signed or unsigned).**\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: x = 123\nOutput: 321\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: x = -123\nOutput: -321\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: x = 120\nOutput: 21\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `-231 <= x <= 231 - 1`",
+    "title": "Reverse Integer"
+  },
   "835-image-overlap": {
     "difficulty": "Medium",
     "folder": "835-image-overlap",
@@ -798,35 +830,36 @@
     "statement_md": "Given a string s, return *the number of **distinct non-empty subsequences** of* `s`. Since the answer may be very large, return it **modulo** `109 + 7`.\n\n A **subsequence** of a string is a new string that is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (i.e., `\"ace\"` is a subsequence of `\"abcde\"` while `\"aec\"` is not.\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"abc\"\nOutput: 7\nExplanation: The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\".\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"aba\"\nOutput: 6\nExplanation: The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\".\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: s = \"aaa\"\nOutput: 3\nExplanation: The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\".\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 2000`\n - `s` consists of lowercase English letters.",
     "title": "Distinct Subsequences II"
   },
-  "7-reverse-integer": {
-    "folder": "7-reverse-integer",
+  "125-valid-palindrome": {
+    "folder": "125-valid-palindrome",
     "solutions": {
       "py": {
         "lang_display": "Python3",
         "file": "solution.py",
-        "runtime": "0 ms",
-        "runtime_pct": 100,
-        "memory": "19.3 MB",
-        "memory_pct": 44.617500000000014,
+        "runtime": "6 ms",
+        "runtime_pct": 84.7244,
+        "memory": "23.3 MB",
+        "memory_pct": 15.909099999999977,
         "solved_at": "2026-10-10",
-        "submitted": "2026-10-10 20:46 UTC"
+        "submitted": "2026-10-10 21:10 UTC"
       }
     },
     "meta": {
-      "frontend_id": "7",
-      "title": "Reverse Integer",
-      "slug": "reverse-integer",
-      "difficulty": "Medium",
+      "frontend_id": "125",
+      "title": "Valid Palindrome",
+      "slug": "valid-palindrome",
+      "difficulty": "Easy",
       "tags": [
-        "Math"
+        "Two Pointers",
+        "String"
       ],
-      "url": "https://leetcode.com/problems/reverse-integer/"
+      "url": "https://leetcode.com/problems/valid-palindrome/"
     },
-    "statement_md": "Given a signed 32-bit integer `x`, return `x`*with its digits reversed*. If reversing `x` causes the value to go outside the signed 32-bit integer range `[-231, 231 - 1]`, then return `0`.\n\n\n\n**Assume the environment does not allow you to store 64-bit integers (signed or unsigned).**\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: x = 123\nOutput: 321\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: x = -123\nOutput: -321\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: x = 120\nOutput: 21\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `-231 <= x <= 231 - 1`",
-    "frontend_id": "7",
-    "title": "Reverse Integer",
-    "slug": "reverse-integer",
-    "difficulty": "Medium",
+    "statement_md": "A phrase is a **palindrome** if, after converting all uppercase letters into lowercase letters and removing all non-alphanumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers.\n\n\n\nGiven a string `s`, return `true`*if it is a **palindrome**, or*`false`*otherwise*.\n\n\n\n\n\n**Example 1:**\n\n\n\n```\nInput: s = \"A man, a plan, a canal: Panama\"\nOutput: true\nExplanation: \"amanaplanacanalpanama\" is a palindrome.\n```\n\n\n\n**Example 2:**\n\n\n\n```\nInput: s = \"race a car\"\nOutput: false\nExplanation: \"raceacar\" is not a palindrome.\n```\n\n\n\n**Example 3:**\n\n\n\n```\nInput: s = \" \"\nOutput: true\nExplanation: s is an empty string \"\" after removing non-alphanumeric characters.\nSince an empty string reads the same forward and backward, it is a palindrome.\n```\n\n\n\n\n\n**Constraints:**\n\n\n - `1 <= s.length <= 2 * 105`\n - `s` consists only of printable ASCII characters.",
+    "frontend_id": "125",
+    "title": "Valid Palindrome",
+    "slug": "valid-palindrome",
+    "difficulty": "Easy",
     "lang_display": "Python3",
     "solved_at": "2026-10-10"
   }

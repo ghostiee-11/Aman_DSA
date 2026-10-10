@@ -2,12 +2,13 @@
 
 Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 
-**Solved: 25** (Easy: 13, Medium: 8, Hard: 4)
+**Solved: 26** (Easy: 14, Medium: 8, Hard: 4)
 
 | # | Title | Difficulty | Language |
 | --- | --- | --- | --- |
 | 7 | [Reverse Integer](7-reverse-integer/) | Medium | Python3 |
 | 115 | [Distinct Subsequences](115-distinct-subsequences/) | Hard | Python3 |
+| 125 | [Valid Palindrome](125-valid-palindrome/) | Easy | Python3 |
 | 628 | [Maximum Product of Three Numbers](628-maximum-product-of-three-numbers/) | Easy | C++ |
 | 835 | [Image Overlap](835-image-overlap/) | Medium | Python3 |
 | 940 | [Distinct Subsequences II](940-distinct-subsequences-ii/) | Hard | Python3 |
