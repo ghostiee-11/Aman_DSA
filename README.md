@@ -2,7 +2,7 @@
 
 Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 
-**Solved: 30** (Easy: 18, Medium: 8, Hard: 4)
+**Solved: 31** (Easy: 19, Medium: 8, Hard: 4)
 
 | # | Title | Difficulty | Language |
 | --- | --- | --- | --- |
@@ -16,6 +16,7 @@ Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 | 1189 | [Maximum Number of Balloons](1189-maximum-number-of-balloons/) | Easy | C++ |
 | 1464 | [Maximum Product of Two Elements in an Array](1464-maximum-product-of-two-elements-in-an-array/) | Easy | Python3 |
 | 1480 | [Running Sum of 1d Array](1480-running-sum-of-1d-array/) | Easy | Python3 |
+| 1903 | [Largest Odd Number in String](1903-largest-odd-number-in-string/) | Easy | Python3 |
 | 1979 | [Find Greatest Common Divisor of Array](1979-find-greatest-common-divisor-of-array/) | Easy | Python3 |
 | 2144 | [Minimum Cost of Buying Candies With Discount](2144-minimum-cost-of-buying-candies-with-discount/) | Easy | Python3 |
 | 2265 | [Count Nodes Equal to Average of Subtree](2265-count-nodes-equal-to-average-of-subtree/) | Medium | Python3 |
