@@ -2,11 +2,12 @@
 
 Auto-synced by [LeetGit](https://github.com/ghostiee-11/leetgit).
 
-**Solved: 31** (Easy: 19, Medium: 8, Hard: 4)
+**Solved: 32** (Easy: 20, Medium: 8, Hard: 4)
 
 | # | Title | Difficulty | Language |
 | --- | --- | --- | --- |
 | 7 | [Reverse Integer](7-reverse-integer/) | Medium | Python3 |
+| 14 | [Longest Common Prefix](14-longest-common-prefix/) | Easy | Python3 |
 | 115 | [Distinct Subsequences](115-distinct-subsequences/) | Hard | Python3 |
 | 125 | [Valid Palindrome](125-valid-palindrome/) | Easy | Python3 |
 | 509 | [Fibonacci Number](509-fibonacci-number/) | Easy | Python3 |
